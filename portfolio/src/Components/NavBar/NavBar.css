@@ -3,17 +3,23 @@
 .navbar-custom .navbar-text {
   color: #c96567;
   font-size: 18px;
-  margin-left: 3rem;
+  margin-left: 2rem;
+  
 }
 
 /* change the link color */
-.navbar-custom .navbar-nav .nav-link {
+.navbar-custom  .nav-link {
   color: #c96567;
   text-align: center;
   font-size: 18px;
+  margin-left: 1rem;
+  
 }
 .navbar-toggler-icon {
   color: white;
+}
+.navbar-nav{
+  margin-right: 2rem;
 }
 
 /* change the color of active or hovered links */
@@ -22,6 +28,7 @@
 .navbar-custom .nav-item:hover .nav-link {
   color: #9e5a63;
   text-align: center;
+  cursor: pointer;
 }
 
 /* for dropdowns only */
@@ -36,7 +43,7 @@
 /* dropdown item text color */
 .navbar-custom .navbar-nav .dropdown-item {
   color: white;
-  text-align: center;
+  justify-content: end;
 }
 .navbar-toggler {
   color: #9e5a63;
@@ -54,3 +61,4 @@
   height: 3rem;
   color: transparent;
 }
+
