@@ -1,0 +1,56 @@
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #c96567;
+  font-size: 18px;
+  margin-left: 3rem;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #c96567;
+  text-align: center;
+  font-size: 18px;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #9e5a63;
+  text-align: center;
+}
+
+/* for dropdowns only */
+.navbar-custom .navbar-nav .dropdown-menu {
+  background-color: #f8e9a1;
+  text-align: center;
+}
+.togglerIcon {
+  color: white;
+  height: 4rem;
+}
+/* dropdown item text color */
+.navbar-custom .navbar-nav .dropdown-item {
+  color: white;
+  text-align: center;
+}
+.navbar-toggler {
+  color: #9e5a63;
+  background: linear-gradient(90deg, #c96567 0%, #b84655 50%, #cc9098 100%);
+  height: 2.5rem;
+}
+
+/* dropdown item hover or focus */
+.navbar-custom .navbar-nav .dropdown-item:hover,
+.navbar-custom .navbar-nav .dropdown-item:focus {
+  background-color: #eeeeee;
+  text-align: center;
+}
+.logo-img {
+  height: 3rem;
+  color: transparent;
+}
