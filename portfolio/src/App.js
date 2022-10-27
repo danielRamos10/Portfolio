@@ -1,12 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
-import Carousel from './Components/Carousel/Carousel';
+import About from './Components/AboutMe/AboutMe';
+import Landing from './Components/Landing/Landing';
+//import Carousel from './Components/Carousel/Carousel';
 import NavBar from './Components/NavBar/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <NavBar/>
+      <Landing/>
+      <About/>
     </div>
   );
 }

@@ -1,25 +1,28 @@
 /* change the brand and text color */
-.navbar-custom .navbar-brand,
+.navbar-custom,
 .navbar-custom .navbar-text {
   color: #c96567;
   font-size: 18px;
-  margin-left: 2rem;
-  
 }
 
 /* change the link color */
-.navbar-custom  .nav-link {
+.navbar-custom .nav-link {
   color: #c96567;
   text-align: center;
   font-size: 18px;
-  margin-left: 1rem;
-  
 }
-.navbar-toggler-icon {
-  color: white;
+.navbar-brand{
+  margin-right: 0;
+  margin-left: 1rem
 }
-.navbar-nav{
-  margin-right: 2rem;
+
+
+.navbar-nav {
+  margin-right: 1rem;
+}
+.list-item {
+  margin-left: 10px;
+  text-align: center;
 }
 
 /* change the color of active or hovered links */
@@ -30,25 +33,27 @@
   text-align: center;
   cursor: pointer;
 }
-
-/* for dropdowns only */
-.navbar-custom .navbar-nav .dropdown-menu {
-  background-color: #f8e9a1;
-  text-align: center;
+.nav-item:hover,
+.nav-item:focus {
+  text-decoration: underline;
 }
+nav {
+  background-color: #293e51;
+}
+/* for dropdowns only */
 .togglerIcon {
-  color: white;
+  color: #eeeeee;
   height: 4rem;
 }
 /* dropdown item text color */
 .navbar-custom .navbar-nav .dropdown-item {
   color: white;
-  justify-content: end;
 }
 .navbar-toggler {
   color: #9e5a63;
   background: linear-gradient(90deg, #c96567 0%, #b84655 50%, #cc9098 100%);
   height: 2.5rem;
+  margin-left: 1rem;
 }
 
 /* dropdown item hover or focus */
@@ -58,7 +63,6 @@
   text-align: center;
 }
 .logo-img {
-  height: 3rem;
+  height: 2.5rem;
   color: transparent;
 }
-

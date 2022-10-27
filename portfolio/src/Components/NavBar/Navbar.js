@@ -3,7 +3,7 @@ import logo from "./logo-hres.png";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-custom sticky-top ">
+    <nav className="navbar navbar-expand-lg navbar-custom sticky-top">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -25,22 +25,22 @@ const NavBar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link " href="/">
-                <i className="fa-solid fa-house-laptop"></i>Home
+                <i className="fa-solid fa-house-laptop"></i><span className= "list-item">Home</span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/about">
-                <i className="fa-regular fa-address-card"></i>About
+                <i className="fa-regular fa-address-card"></i><span className= "list-item">About</span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/projects">
-                <i className="fa-solid fa-person-chalkboard"></i>Projects
+                <i className="fa-solid fa-person-chalkboard"></i><span className= "list-item">Projects</span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link " href="/contact">
-                <i className="fa-solid fa-blender-phone"></i>Contact
+                <i className="fa-solid fa-blender-phone"></i><span className= "list-item">Contact</span>
               </a>
             </li>
           </ul>
