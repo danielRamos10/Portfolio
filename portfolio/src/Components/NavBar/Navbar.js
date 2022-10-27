@@ -23,24 +23,28 @@ const NavBar = () => {
         </div>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link " href="/">
-                <i className="fa-solid fa-house-laptop"></i><span className= "list-item">Home</span>
+            <li className="nav-item active">
+              <a className="nav-link " href="#home">
+                <i className="list-icon fa-solid fa-house-laptop "></i>
+                <span className="list-item">Home</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
-                <i className="fa-regular fa-address-card"></i><span className= "list-item">About</span>
+              <a className="nav-link" href="#about">
+                <i className="list-icon fa-regular fa-address-card "></i>
+                <span className="list-item">About</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
-                <i className="fa-solid fa-person-chalkboard"></i><span className= "list-item">Projects</span>
+              <a className="nav-link" href="#project">
+                <i className="list-icon fa-solid fa-person-chalkboard "></i>
+                <span className="list-item">Projects</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/contact">
-                <i className="fa-solid fa-blender-phone"></i><span className= "list-item">Contact</span>
+              <a className="nav-link " href="#contact">
+                <i className="list-icon fa-solid fa-blender-phone "></i>
+                <span className="list-item">Contact</span>
               </a>
             </li>
           </ul>

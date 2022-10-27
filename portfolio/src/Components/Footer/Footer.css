@@ -1,0 +1,10 @@
+.footer-container{
+    background-color: #293e51;
+    height: 7vh;
+}
+.footer-logo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    height: 7vh;
+}

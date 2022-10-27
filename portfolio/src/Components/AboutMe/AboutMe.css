@@ -1,6 +1,6 @@
-.container-square{
-    height: 500px;
-    width: 100%;
-    background-color: #9e5a63;
 
+.container-square{
+    background-color: #9e5a63;
+    height: 100vh;
+ 
 }
