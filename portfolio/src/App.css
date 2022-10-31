@@ -1,7 +1,12 @@
 /* .App {
   text-align: center;
 } */
-body{
+body {
   background-color: #314455;
 }
+html{
+  
+  scroll-snap-type: y mandatory;
 
+
+}

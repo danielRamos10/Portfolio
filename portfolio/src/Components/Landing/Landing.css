@@ -1,4 +1,5 @@
-.landing-container
-{
-    height:100vh;
+.landing-container {
+  height: 100vh;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }

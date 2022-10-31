@@ -1,6 +1,6 @@
-
-.container-square{
-    background-color: #9e5a63;
-    height: 100vh;
- 
+.container-square {
+  background-color: #9e5a63;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }

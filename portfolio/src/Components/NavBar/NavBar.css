@@ -11,11 +11,10 @@
   text-align: center;
   font-size: 18px;
 }
-.navbar-brand{
+.navbar-brand {
   margin-right: 0;
-  margin-left: 1rem
+  margin-left: 1rem;
 }
-
 
 .navbar-nav {
   margin-right: 1rem;
@@ -25,19 +24,17 @@
   /* text-align: center; */
 }
 
-
 /* change the color of active or hovered links */
-.navbar-custom  .nav-link,
-.navbar-custom  .nav-link,
-.navbar-custom  .nav-link {
-  color: #c96567 ;
+.navbar-custom .nav-link,
+.navbar-custom .nav-link,
+.navbar-custom .nav-link {
+  color: #c96567;
   text-align: center;
   cursor: pointer;
 }
-.list-icon{
+.list-icon {
   margin-left: 0.5rem;
   text-align: center;
-
 }
 /* .nav-item.active{
   background:linear-gradient(to left, #c96567 0%, #b84655 50%, #cc9098 100%);;
@@ -49,15 +46,18 @@
 } */
 
 .nav-item:hover {
-  background:linear-gradient(to left, #c96567 0%, #b84655 50%, #cc9098 100%);;
+  background: linear-gradient(to left, #c96567 0%, #b84655 50%, #cc9098 100%);
   padding-top: 3px;
   color: #cc9098;
   background-position: 0 100%;
   background-size: 100% 3px;
   background-repeat: repeat-x;
+  align-items: center;
+  justify-items: center;
 }
 nav {
   background-color: #293e51;
+  scroll-behavior: smooth;
 }
 /* for dropdowns only */
 .togglerIcon {

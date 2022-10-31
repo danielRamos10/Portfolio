@@ -1,4 +1,12 @@
 .skills-container{
     height: 100vh;
     background-color: #314455;
+
+    scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+
+
+
+
 }
