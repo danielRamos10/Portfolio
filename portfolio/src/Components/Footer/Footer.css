@@ -3,6 +3,7 @@
   height: 4rem;
   scroll-snap-align: end;
   scroll-snap-stop: always;
+  margin-bottom: 0;
 }
 
 .footer-logo {

@@ -3,9 +3,12 @@
 } */
 body {
   background-color: #314455;
+  height:100%;
+  display: flex;
+  flex-direction: column;
 }
 html{
-  
+  height: 100%;
   scroll-snap-type: y mandatory;
 
 

@@ -1,6 +1,7 @@
 .contact-container {
-  height: 100vh;
-  background-color: #9e5a63;
+  width:100%;
+  scroll-snap-stop:normal;
   scroll-snap-align: center;
-  scroll-snap-stop: always;
+
+  background-color: #9e5a63;
 }

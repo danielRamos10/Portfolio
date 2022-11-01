@@ -3,7 +3,7 @@ import logo from './logo-hres.png';
 
 const Footer = ()=>{
     return (
-        <footer className = "footer-container sticky-bottom">
+        <footer className = "footer-container ">
             <div className = "text-center">
                 <img src={logo} className = "footer-logo" alt="footer-logo"/>
                 

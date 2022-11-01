@@ -44,6 +44,10 @@
   background-repeat: repeat-x;
 
 } */
+.navbar{
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
 
 .nav-item:hover {
   background: linear-gradient(to left, #c96567 0%, #b84655 50%, #cc9098 100%);
@@ -57,7 +61,6 @@
 }
 nav {
   background-color: #293e51;
-  scroll-behavior: smooth;
 }
 /* for dropdowns only */
 .togglerIcon {
