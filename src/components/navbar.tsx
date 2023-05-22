@@ -1,25 +1,24 @@
 
 import './mystyles.scss'
+import logo from '../assets/log_svg.svg'
 import { useState } from 'react';
 import { Navbar } from 'react-bulma-components';
-import logo from '../assets/logo_dr_hr.png'
 function NavBar() {
 
   const [toggle, setToggle] = useState(false);
   return (
 
-    <Navbar backgroundColor='blue-grey'>
+    <Navbar backgroundColor='gunmetal'>
       <Navbar.Brand>
-        <Navbar.Item>
-          <img src={logo} width="100%" />
-        </Navbar.Item>
-
-        <Navbar.Burger className={` ${toggle ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={() => { setToggle(!toggle) }} backgroundColor='blue-grey'>
+        <Navbar.Burger className={` ${toggle ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={() => { setToggle(!toggle) }} backgroundColor='gunmetal' id='navbarBurger'>
         </Navbar.Burger>
+
+        <img src={logo} alt="logo" className='nav-logo' />
+
       </Navbar.Brand>
 
-      <Navbar.Menu className={`navbar-menu ${toggle ? "is-active" : ""}`} alignContent='center' backgroundColor='blue-grey'>
-        <Navbar.Container align='right' backgroundColor='blue-grey'>
+      <Navbar.Menu className={`navbar-menu ${toggle ? "is-active" : ""}`} alignContent='center' backgroundColor='gunmetal'>
+        <Navbar.Container align='right' backgroundColor='gunmetal'>
           <Navbar.Item >
             Home
           </Navbar.Item>

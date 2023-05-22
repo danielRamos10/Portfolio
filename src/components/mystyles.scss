@@ -3,39 +3,60 @@
 @import "/node_modules/bulma/sass/utilities/initial-variables.sass";
 
 $custom-colors: (
-  "salmon": (
-    #d1495b,
+  "cyan": (
+    #66fcf1,
     #fff,
   ),
-  "blue-grey": (
-    #053c5e,
+  "verdigris": (
+    #45a29e,
     #000,
   ),
-  "golden": (
-    #f3a712,
+  "silver": (
+    #c5c6c7,
     #fff,
   ),
-  "soft-white": (
-    #f4f3ee,
+  "gunmetal": (
+    #1f2833,
     #000,
   ),
-  "forest-green": (
-    #7f9172,
+  "night": (
+    #0b0c10,
     #000,
   ),
 );
 .navbar {
   box-shadow: 0px 2px 2px 0px rgba(3, 14, 21, 0.2);
+  height: 70px;
 }
-.navbar-item > img {
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
+
 .navbar-burger {
-  color: #f4f3ee !important;
+  color: #66fcf1 !important;
+  height: 70px !important;
 }
+#navbarBurger{
+    margin-left: 0;
+}
+
+.nav-logo{
+   
+    margin-left: 2rem;
+    height: 60px;
+}
+@media only screen and (max-width: 1022px){
+    .nav-logo{
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+    .navbar-brand{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
 .navbar-item {
-  color: #f3a712 !important;
+  color: #66fcf1 !important;
 }
 .navbar-end {
   display: flex;
@@ -67,7 +88,7 @@ a.navbar-item::before {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #f4f3ee;
+  background-color: #45a29e;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
