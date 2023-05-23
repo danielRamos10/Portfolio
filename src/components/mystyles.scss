@@ -28,41 +28,46 @@ $custom-colors: (
   box-shadow: 0px 2px 2px 0px rgba(3, 14, 21, 0.2);
   height: 70px;
 }
-
 .navbar-burger {
   color: #66fcf1 !important;
   height: 70px !important;
+  opacity: 1;
 }
-#navbarBurger{
+#navbarBurger {
+  margin-left: 0;
+}
+
+.nav-logo {
+  margin-left: 2rem;
+  height: 60px;
+  opacity: 1;
+}
+@media only screen and (max-width: 1022px) {
+  .nav-logo {
+    opacity: 1;
     margin-left: 0;
+    margin-right: 2rem;
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-.nav-logo{
-   
-    margin-left: 2rem;
-    height: 60px;
-}
-@media only screen and (max-width: 1022px){
-    .nav-logo{
-        margin-left: 0;
-        margin-right: 2rem;
-    }
-    .navbar-brand{
-        display: flex;
-        justify-content: space-between;
-    }
-
-}
-
 
 .navbar-item {
   color: #66fcf1 !important;
 }
+.navbar-item > span {
+  margin-right: 0.5rem;
+}
+.navbar-item {
+  align-items: start;
+}
 .navbar-end {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  margin-left: 1rem;
 }
 @media only screen and (min-width: 1022px) {
   .navbar-end {
@@ -75,7 +80,7 @@ $custom-colors: (
 .navbar-link.is-active,
 .navbar-link:focus,
 a.navbar-item:hover {
-  background-color: #053c5e !important;
+  background-color: transparent !important;
 }
 
 .navbar-link.is-active,

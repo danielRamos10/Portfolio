@@ -1,5 +1,8 @@
-html{
-    background-color: #1f2833 !important;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
 }
 
 /* colors palette: */
