@@ -11,16 +11,16 @@ $custom-colors: (
     #45a29e,
     #000,
   ),
-  "silver": (
-    #c5c6c7,
+  "bittersweet": (
+    #A4303F,
     #fff,
   ),
   "gunmetal": (
     #1f2833,
     #000,
   ),
-  "night": (
-    #0b0c10,
+  "lavender-blush": (
+    #FCEFEF,
     #000,
   ),
 );
@@ -44,6 +44,7 @@ $custom-colors: (
 }
 @media only screen and (max-width: 1022px) {
   .nav-logo {
+    height: 55px;
     opacity: 1;
     margin-left: 0;
     margin-right: 2rem;
@@ -79,9 +80,17 @@ $custom-colors: (
 
 .navbar-link.is-active,
 .navbar-link:focus,
-a.navbar-item:hover {
+a.navbar-item:hover
+{
   background-color: transparent !important;
 }
+.navbar-item-active-background-color{
+  color: transparent !important;
+}
+ 
+
+  
+
 
 .navbar-link.is-active,
 .navbar-link:focus,
@@ -101,6 +110,10 @@ a.navbar-item::before {
 .navbar-link:focus,
 a.navbar-item:hover::before {
   transform: scaleX(1);
+}
+
+.button:active {
+  color: transparent !important;
 }
 
 @import "/node_modules/bulma/bulma.sass";
