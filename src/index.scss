@@ -1,0 +1,32 @@
+@charset 'utf-8';
+@import "/node_modules/bulma/sass/utilities/functions.sass";
+@import "/node_modules/bulma/sass/utilities/initial-variables.sass";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+$custom-colors: (
+  "cyan": (
+    #66fcf1,
+    #fff,
+  ),
+  "verdigris": (
+    #45a29e,
+    #000,
+  ),
+  "flame": (
+    #E4572E,
+    #fff,
+  ),
+  "gunmetal": (
+    #1f2833,
+    #000,
+  ),
+  "flash-white": (
+    #EBEBEB,
+    #000,
+  ),
+);
+@import "/node_modules/bulma/bulma.sass";
