@@ -5,12 +5,12 @@ import { useState } from 'react';
 import { Navbar, Button } from 'react-bulma-components';
 import { faAddressCard, faHouse, faPhone, faLaptop } from '@fortawesome/free-solid-svg-icons';
 
-import resumePDF from '/public/Resume-JDRP.pdf';
+import resumePDF from '/src/Resume-JDRP.pdf';
 
 function NavBar() {
   const [toggle, setToggle] = useState(false);
   return (
-    <Navbar backgroundColor='gunmetal' fixed='top'>
+    <Navbar fixed='top' backgroundColor='gunmetal'>
       <Navbar.Brand>
         <Navbar.Burger className={` ${toggle ? "is-active" : ""}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={() => { setToggle(!toggle) }} backgroundColor='gunmetal' id='navbarBurger'>
         </Navbar.Burger>

@@ -1,3 +1,4 @@
+import FooterComponent from "./components/footer/footer";
 import NavBar from "./components/navbar/navbar";
 import About from "./components/pages/about";
 import Contact from "./components/pages/contact";
@@ -12,6 +13,7 @@ function App() {
     <About/>
     <Skills/>
     <Contact/>
+    <FooterComponent/>
     </>
   
   )

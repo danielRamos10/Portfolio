@@ -2,10 +2,10 @@
 @import "/node_modules/bulma/sass/utilities/functions.sass";
 @import "/node_modules/bulma/sass/utilities/initial-variables.sass";
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 $custom-colors: (
   "cyan": (
@@ -17,7 +17,7 @@ $custom-colors: (
     #000,
   ),
   "flame": (
-    #E4572E,
+    #e4572e,
     #fff,
   ),
   "gunmetal": (
@@ -25,7 +25,7 @@ $custom-colors: (
     #000,
   ),
   "flash-white": (
-    #EBEBEB,
+    #ebebeb,
     #000,
   ),
 );
