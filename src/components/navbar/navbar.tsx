@@ -1,11 +1,12 @@
-
 import './navbar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '/src/assets/log_svg.svg'
 import { useState } from 'react';
 import { Navbar, Button } from 'react-bulma-components';
-
 import { faAddressCard, faHouse, faPhone, faLaptop } from '@fortawesome/free-solid-svg-icons';
+
+import resumePDF from '/public/Resume-JDRP.pdf';
+
 function NavBar() {
   const [toggle, setToggle] = useState(false);
   return (
@@ -17,7 +18,6 @@ function NavBar() {
         <a href="/" className='logo-container'>
           <img src={logo} alt="logo" className='nav-logo' />
         </a>
-
 
       </Navbar.Brand>
 
@@ -37,10 +37,13 @@ function NavBar() {
           </Navbar.Item>
           <Navbar.Item href='#contactComponent'>
             <span> <FontAwesomeIcon icon={faPhone} /></span>
-             Contact
+            Contact
           </Navbar.Item>
+
           <Navbar.Item renderAs='span'>
-            <Button color='flame' textColor='flash-white' textWeight='semibold'>Resume</Button>
+            <Button color='flame' textColor='flash-white' textWeight='semibold' renderAs='a' href={resumePDF} target='_blank'>
+              Resume
+            </Button>
           </Navbar.Item>
         </Navbar.Container>
       </Navbar.Menu>
