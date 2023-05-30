@@ -36,7 +36,9 @@ function NavBar() {
             Skills
           </Navbar.Item>
           <Navbar.Item href='#contactComponent'>
-            <span> <FontAwesomeIcon icon={faPhone} /></span>
+            <span>
+              <FontAwesomeIcon icon={faPhone}/>
+            </span>
             Contact
           </Navbar.Item>
 

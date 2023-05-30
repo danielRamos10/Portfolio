@@ -15,16 +15,22 @@ interface FormProps {
 const FormInput: React.FC<FormProps> = ({ label, type, id, placeholder, icon }) => {
     const [input, setInput] = useState('')
 
+    const onChangeHandler = (e: any) => {
+        setInput(e.target.value)
+    }
+
     return (
         <Form.Field backgroundColor='gunmetal' pr={2} pl={2}>
             <Form.Label textColor='flash-white' backgroundColor='gunmetal'>{label}</Form.Label>
             <Form.Control backgroundColor='gunmetal'>
                 <Form.Input
-                    color='danger'
+                    color={`${input && input.length > 0 ? 'cyan' : 'flame'}`}
+                    backgroundColor='flash-white'
                     type={type}
                     id={id}
                     placeholder={placeholder}
-                    
+                    onChange={onChangeHandler}
+
                 />
                 <Icon align="left" size="small">
                     <FontAwesomeIcon icon={icon} color='black' />
@@ -33,7 +39,7 @@ const FormInput: React.FC<FormProps> = ({ label, type, id, placeholder, icon }) 
                     <FontAwesomeIcon icon={faCheck} />
                 </Icon>
             </Form.Control>
-            {label.length <= 0 ? <span></span> : <Form.Help color="danger">{label} cannot be empty</Form.Help>}
+            {input && input.length > 0 ? <div style={{ marginTop: '2.1rem' }}></div> : <Form.Help color="flame">{label} cannot be empty</Form.Help>}
 
         </Form.Field>
     )
