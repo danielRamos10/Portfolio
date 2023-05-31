@@ -20,8 +20,8 @@ const FormInput: React.FC<FormProps> = ({ label, type, id, placeholder, icon }) 
     }
 
     return (
-        <Form.Field backgroundColor='gunmetal' pr={2} pl={2}>
-            <Form.Label textColor='flash-white' backgroundColor='gunmetal'>{label}</Form.Label>
+        <Form.Field backgroundColor='gunmetal'>
+            <Form.Label textColor='flash-white' backgroundColor='gunmetal' >{label}</Form.Label>
             <Form.Control backgroundColor='gunmetal'>
                 <Form.Input
                     color={`${input && input.length > 0 ? 'cyan' : 'flame'}`}

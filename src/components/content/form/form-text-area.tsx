@@ -6,7 +6,7 @@ interface FormTextAreaProps {
 }
 export const FormTextArea: React.FC<FormTextAreaProps> = ({ message }) => {
   return (
-    <Form.Field pr={2} pl={2}>
+    <Form.Field>
       <Form.Label textColor='flash-white'>Message</Form.Label>
       <Form.Textarea
       backgroundColor='flash-white'

@@ -1,9 +1,14 @@
+
 import './content-card.scss'
 import { Card } from 'react-bulma-components'
 
-export default function ContentCard() {
+interface CardProps {
+children:JSX.Element;
+}
+export default function ContentCard({children}:CardProps) {
   return (
-    <Card>
+    <Card backgroundColor='gunmetal' mb={5}>
+      {children}
     </Card>
   )
 }

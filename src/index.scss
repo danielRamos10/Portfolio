@@ -29,4 +29,8 @@ $custom-colors: (
     #000,
   ),
 );
+.container{
+  height: 600px !important;
+}
+
 @import "/node_modules/bulma/bulma.sass";
