@@ -1,25 +1,116 @@
-import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
-import FormInput from "./input";
-import { FormTextArea } from "./form-text-area";
-import './form.scss';
+import {
+  faCheck,
+  faEnvelope,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import "./form.scss";
 import ContentCard from "../card/content-card";
+import { useState } from "react";
+import { Button, Form, Icon } from "react-bulma-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function FormComponent() {
-    return (
-        <ContentCard>
-            <div className="form-container">
-                <form >
-                    <FormInput label="Name" type="text" id="name" placeholder="Rocket" icon={faUser}></FormInput>
-                    <FormInput label="Email" type="email" id="email" placeholder="rocket@groot.com" icon={faEnvelope}></FormInput>
-                    <FormTextArea message="..." />
-                </form>
-            </div>
-        </ContentCard>
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
-
-
-
-
-
-    )
+  const onSubmitHandler = (e: any) => {
+    e.preventDefault();
+    if (name.trim() === "") {
+      return;
+    }
+  };
+  const onNameChangeHandler = (e: any) => {
+    setName(e.target.value);
+    console.log(name);
+  };
+  const onEmailChangeHandler = (e: any) => {
+    setEmail(e.target.value);
+    console.log(email);
+  };
+  const onMessageChangeHandler = (e: any) => {
+    setMessage(e.target.value);
+    console.log(message);
+  };
+  return (
+    <ContentCard>
+      <div className="form-container">
+        <form onSubmit={onSubmitHandler}>
+          <Form.Field backgroundColor="gunmetal">
+            <Form.Label textColor="flash-white" backgroundColor="gunmetal">
+              Name
+            </Form.Label>
+            <Form.Control backgroundColor="gunmetal">
+              <Form.Input
+                color={`${name && name.length > 0 ? "cyan" : "flame"}`}
+                backgroundColor="flash-white"
+                type="text"
+                id="name"
+                placeholder="Rocket"
+                onChange={onNameChangeHandler}
+              />
+              <Icon align="left" size="small">
+                <FontAwesomeIcon icon={faUser} color="black" />
+              </Icon>
+              <Icon align="right" size="small">
+                <FontAwesomeIcon icon={faCheck} />
+              </Icon>
+            </Form.Control>
+            {name && name.length > 0 ? (
+              <div style={{ marginTop: "2.1rem" }}></div>
+            ) : (
+              <Form.Help color="flame">Name cannot be empty</Form.Help>
+            )}
+          </Form.Field>
+          <Form.Field backgroundColor="gunmetal">
+            <Form.Label textColor="flash-white" backgroundColor="gunmetal">
+              Email
+            </Form.Label>
+            <Form.Control backgroundColor="gunmetal">
+              <Form.Input
+                color={`${email && email.length > 0 ? "cyan" : "flame"}`}
+                backgroundColor="flash-white"
+                type="text"
+                id="name"
+                placeholder="Rocket"
+                onChange={onEmailChangeHandler}
+              />
+              <Icon align="left" size="small">
+                <FontAwesomeIcon icon={faEnvelope} color="black" />
+              </Icon>
+              <Icon align="right" size="small">
+                <FontAwesomeIcon icon={faCheck} />
+              </Icon>
+            </Form.Control>
+            {email && email.length > 0 ? (
+              <div style={{ marginTop: "2.1rem" }}></div>
+            ) : (
+              <Form.Help color="flame">Email cannot be empty</Form.Help>
+            )}
+          </Form.Field>
+          <Form.Field>
+            <Form.Label textColor="flash-white">Message</Form.Label>
+            <Form.Textarea
+              backgroundColor="flash-white"
+              placeholder="..."
+              color={`${message && message.length > 0 ? "cyan" : "flame"}`}
+              onChange={onMessageChangeHandler}
+            />
+            {message && message.length > 0 ? (
+              <div style={{ marginTop: "2.1rem" }}></div>
+            ) : (
+              <Form.Help color="flame">Message cannot be empty</Form.Help>
+            )}
+          </Form.Field>
+          <Form.Field kind="group">
+            <Form.Control>
+              <Button color="flame" mt={2} type="submit">
+                Submit
+              </Button>
+            </Form.Control>
+          </Form.Field>
+        </form>
+      </div>
+    </ContentCard>
+  );
 }
