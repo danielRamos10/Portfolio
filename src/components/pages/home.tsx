@@ -4,7 +4,7 @@ function Home() {
     return (
         <div>
         <Container backgroundColor="gunmetal" breakpoint={'fluid'} id='homeComponent'>
-            <Heading textColor='cyan' pt={1} textAlign={'center'}>Home</Heading>
+            <Heading textColor='cyan' pt={5} textAlign={'center'}>Home</Heading>
         </Container>
         </div>
     )

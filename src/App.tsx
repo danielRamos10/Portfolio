@@ -7,14 +7,14 @@ import Skills from "./components/pages/skills";
 
 function App() {
   return (
-    <>
+    <div>
     <NavBar/>
     <Home/>
     <About/>
     <Skills/>
     <Contact/>
     <FooterComponent/>
-    </>
+    </div>
   
   )
 }

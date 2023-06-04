@@ -7,7 +7,7 @@ function About() {
         <div>
         <Container backgroundColor="gunmetal" breakpoint={'fluid'} id="aboutComponent">
             <Heading textColor="cyan" textAlign={'center'}>About</Heading>
-            <ContentCard/>
+            <ContentCard><div></div></ContentCard>
         </Container>
         </div>
     )
