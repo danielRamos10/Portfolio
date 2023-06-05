@@ -1,14 +1,20 @@
 import "./home.scss";
-import { Heading } from "react-bulma-components";
+import { Heading, Button } from "react-bulma-components";
 function Home() {
   return (
     <div className="home-container">
-      <Heading textColor="flash-white" >
-        Hello, my name is...
+      <div className="line">
+      </div>
+      <Heading className="intro">
+        Hello, my name is
       </Heading>
-      <Heading textColor="cyan" subtitle>
-        Daniel Ramos
+      <Heading className="name anim-typewriter">
+      Daniel Ramos
       </Heading>
+      <Heading className="ocupation">
+       Frontend Developer
+      </Heading>
+      <Button className="contact-btn" color='flame' textSize={6} textWeight="bold"> Let's Chat!</Button>
     </div>
   );
 }
