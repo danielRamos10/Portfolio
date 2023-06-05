@@ -1,12 +1,45 @@
 $align-items: center;
 $justify-content: center;
-$flex-direction:column;
+$flex-direction: column;
+$gunmetal: rgb(31, 40, 51);
+$flame: rgb(228, 87, 46);
+$aquamarine: rgb(69, 162, 158);
 
-.home-container{
-    display: flex;
-    height: 100dvh;
-    width: 100%;
-    align-items: $align-items;
-    justify-content: $justify-content;
-    flex-direction: $flex-direction;
+
+.home-container {
+  top: 0;
+  background: url("/src/assets/sand.jpg") no-repeat;
+  background-blend-mode: screen;
+  background-size: cover;
+  background-color: $gunmetal;
+  display: flex;
+  height: 100dvh;
+  width: 100%;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+.home-container > .title{
+    font-size:3.5rem;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 4px 2px $aquamarine;
+}
+.home-container > .subtitle{
+    font-size:3.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 4px 2px $aquamarine;
+}
+@media only screen and (max-width: 768px) {
+  .home-container {
+    background-size: cover;
+    background-position: center;
+  }
+  .home-container > .title{
+    font-size: 2.5rem;
+  }
+  .home-container > .subtitle{
+    font-size: 2.5rem;
+  }
 }

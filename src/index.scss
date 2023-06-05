@@ -7,8 +7,11 @@
   margin: 0;
   padding: 0;
 }
-html, body, footer, section{
+footer, section, body{
   background-color: #1f2833 !important;
+}
+nav{
+  background-color:rgba(31, 40, 51, 0.5);
 }
 $custom-colors: (
   "cyan": (
@@ -25,6 +28,10 @@ $custom-colors: (
   ),
   "gunmetal": (
     #1f2833,
+    #000,
+  ),
+  "gunmetal-hue": (
+    rgba(31, 40, 51, 0.5),
     #000,
   ),
   "flash-white": (

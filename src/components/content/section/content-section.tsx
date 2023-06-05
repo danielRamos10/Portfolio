@@ -8,7 +8,7 @@ export default function ContentSection() {
         <Heading textColor='flame'>
           Section
         </Heading>
-        <Heading subtitle textColor='cyan'>
+        <Heading subtitle textColor='flash-white'>
           A simple container to divide your page into sections
           , like the one you are currently reading
         </Heading>

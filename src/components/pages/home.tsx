@@ -3,10 +3,10 @@ import { Heading } from "react-bulma-components";
 function Home() {
   return (
     <div className="home-container">
-      <Heading textColor="cyan" textSize={1}>
-        Hello there, my name is...
+      <Heading textColor="flash-white" >
+        Hello, my name is...
       </Heading>
-      <Heading textColor="cyan" textSize={1}>
+      <Heading textColor="cyan" subtitle>
         Daniel Ramos
       </Heading>
     </div>
