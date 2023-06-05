@@ -2,15 +2,14 @@ $align-items: center;
 $justify-content: center;
 $flex-direction:column;
 
-.contact-container{
+.project-container{
     display: flex;
     height: 100dvh;
     width: 100%;
-    align-items: $align-items;
-    justify-content: $justify-content;
     flex-direction: $flex-direction;
 }
-.contact-container > .title{
+.project-container > .title{
     margin-top: 70px;
+    justify-content: $justify-content;
 
 }

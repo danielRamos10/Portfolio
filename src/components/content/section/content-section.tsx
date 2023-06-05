@@ -5,14 +5,11 @@ export default function ContentSection() {
     <>
     <Section>
       <Container>
-        <Heading>
+        <Heading textColor='flame'>
           Section
         </Heading>
-        <Heading subtitle>
-          A simple container to divide your page into{' '}
-          <strong>
-            sections
-          </strong>
+        <Heading subtitle textColor='cyan'>
+          A simple container to divide your page into sections
           , like the one you are currently reading
         </Heading>
       </Container>

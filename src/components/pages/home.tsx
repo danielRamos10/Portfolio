@@ -1,13 +1,16 @@
-import './home.scss'
-import { Container, Heading } from "react-bulma-components";
+import "./home.scss";
+import { Heading } from "react-bulma-components";
 function Home() {
-    return (
-        <div>
-        <Container backgroundColor="gunmetal" breakpoint={'fluid'} id='homeComponent'>
-            <Heading textColor='cyan' pt={5} textAlign={'center'}>Home</Heading>
-        </Container>
-        </div>
-    )
+  return (
+    <div className="home-container">
+      <Heading textColor="cyan" textSize={1}>
+        Hello there, my name is...
+      </Heading>
+      <Heading textColor="cyan" textSize={1}>
+        Daniel Ramos
+      </Heading>
+    </div>
+  );
 }
 
 export default Home;

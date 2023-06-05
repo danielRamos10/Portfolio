@@ -3,7 +3,7 @@ import NavBar from "./components/navbar/navbar";
 import About from "./components/pages/about";
 import Contact from "./components/pages/contact";
 import Home from "./components/pages/home";
-import Skills from "./components/pages/skills";
+import Project from "./components/pages/projects";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     <NavBar/>
     <Home/>
     <About/>
-    <Skills/>
+    <Project/>
     <Contact/>
     <FooterComponent/>
     </div>

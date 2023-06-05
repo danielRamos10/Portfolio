@@ -1,3 +1,16 @@
+$align-items: center;
+$justify-content: center;
+$flex-direction:column;
 
+.about-container{
+    display: flex;
+    height: 100dvh;
+    width: 100%;
+    flex-direction: $flex-direction;
+}
 
-
+.about-container > .title{
+    margin-top: 70px;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

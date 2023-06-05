@@ -1,0 +1,12 @@
+$align-items: center;
+$justify-content: center;
+$flex-direction:column;
+
+.home-container{
+    display: flex;
+    height: 100dvh;
+    width: 100%;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+}

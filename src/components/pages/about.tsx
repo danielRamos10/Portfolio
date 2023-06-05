@@ -1,15 +1,25 @@
-import { Container, Heading } from "react-bulma-components"
+import { Heading } from "react-bulma-components";
 
-import './about.scss';
+import "./about.scss";
 import ContentCard from "../content/card/content-card";
+import ContentSection from "../content/section/content-section";
 function About() {
-    return (
-        <div>
-        <Container backgroundColor="gunmetal" breakpoint={'fluid'} id="aboutComponent">
-            <Heading textColor="cyan" textAlign={'center'}>About</Heading>
-            <ContentCard><div></div></ContentCard>
-        </Container>
-        </div>
-    )
+  return (
+      
+    <div id="aboutComponent" className="about-container">
+        <Heading textColor="cyan" textAlign={"center"}>
+          About
+        </Heading>
+        <ContentCard>
+          <ContentSection/>
+        </ContentCard>
+        <ContentCard>
+          <ContentSection/>
+        </ContentCard>
+        <ContentCard>
+          <ContentSection/>
+        </ContentCard>
+    </div>
+  );
 }
-export default About
+export default About;

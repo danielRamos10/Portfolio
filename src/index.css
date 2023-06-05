@@ -1,12 +1,11 @@
 *{
     box-sizing: border-box;
 }
-body{
-    margin:0;
-  
-}
 html{
+    margin:0;
+    padding: 0;
     background-color: #1f2833;
+    scroll-behavior: smooth;
   }
 
 /* colors palette: */
