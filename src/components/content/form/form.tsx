@@ -49,7 +49,7 @@ export default function FormComponent() {
                 placeholder="Rocket"
                 onChange={onNameChangeHandler}
               />
-              <Icon align="left" size="small">
+              <Icon align="left" size="small" ml={1}>
                 <FontAwesomeIcon icon={faUser} color="black" />
               </Icon>
               <Icon align="right" size="small">
@@ -75,7 +75,7 @@ export default function FormComponent() {
                 placeholder="Rocket"
                 onChange={onEmailChangeHandler}
               />
-              <Icon align="left" size="small">
+              <Icon align="left" size="small" ml={1}>
                 <FontAwesomeIcon icon={faEnvelope} color="black" />
               </Icon>
               <Icon align="right" size="small">
