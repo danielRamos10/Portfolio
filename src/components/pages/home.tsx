@@ -18,9 +18,9 @@ function Home() {
         {" "}
         Let's Chat!
       </Button>
-      <div className="img-container">
+      {/* <div className="img-container">
         <img src={me} alt="me" className="my-image" height={200} width={200} />
-      </div>
+      </div> */}
     </div>
   );
 }
