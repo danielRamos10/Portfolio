@@ -4,15 +4,14 @@
 
 .navbar {
   position: fixed !important;
-  top: 0;
   width: 100%;
   box-shadow: 0px 2px 2px 0px rgba(3, 14, 21, 0.5);
   background-color: rgba(31, 40, 51, 0.5) !important; 
 }
 
 .navbar-brand {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 @media only screen and (orientation:portrait) {
   .navbar-menu{

@@ -1,5 +1,5 @@
 $align-items: center;
-$justify-content: center;
+$justify-content: start;
 $flex-direction:column;
 
 .contact-container{
@@ -11,6 +11,6 @@ $flex-direction:column;
     flex-direction: $flex-direction;
 }
 .contact-container > .title{
-    margin-top: 70px;
+    margin-top: 6rem;
 
 }

@@ -14,18 +14,8 @@ import resumePDF from "/src/Resume-JDRP.pdf";
 
 function NavBar() {
   const [toggle, setToggle] = useState(false);
-  const [navColor, setNameColor] = useState(false);
-  useEffect(() => {
-    changeNavColor();
-    window.addEventListener("scroll", changeNavColor);
-  }, []);
-  const changeNavColor = () => {
-    if (window.scrollY > 80) {
-      setNameColor(false);
-    } else {
-      setNameColor(true);
-    }
-  };
+
+  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

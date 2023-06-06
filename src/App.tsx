@@ -7,15 +7,15 @@ import Project from "./components/pages/projects";
 
 function App() {
   return (
-    <div>
-    <NavBar/>
-    <Home/>
-    <About/>
-    <Project/>
-    <Contact/>
-    <FooterComponent/>
-    </div>
-  
+    <>
+      <NavBar />
+      <Home />
+      <About />
+      <Project />
+      <Contact />
+      <FooterComponent />
+    </>
+
   )
 }
 

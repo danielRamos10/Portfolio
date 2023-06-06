@@ -1,5 +1,5 @@
 $align-items: center;
-$justify-content: center;
+$justify-content: start;
 $flex-direction:column;
 
 .about-container{
@@ -7,10 +7,11 @@ $flex-direction:column;
     height: 100dvh;
     width: 100%;
     flex-direction: $flex-direction;
+     align-items: $align-items;
+     justify-content: $justify-content;
 }
 
+
 .about-container > .title{
-    margin-top: 70px;
-    align-items: $align-items;
-    justify-content: $justify-content;
+    margin-top: 6rem;
 }
