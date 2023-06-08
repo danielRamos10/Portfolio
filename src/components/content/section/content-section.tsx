@@ -3,7 +3,7 @@ import { Section, Container, Heading } from 'react-bulma-components'
 export default function ContentSection() {
   return (
     <>
-    <Section>
+    <Section mb={1} mt={1}>
       <Container>
         <Heading textColor='flame'>
           Section

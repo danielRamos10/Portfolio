@@ -7,7 +7,7 @@ children:JSX.Element;
 }
 export default function ContentCard({children}:CardProps) {
   return (
-    <Card backgroundColor='gunmetal' mb={5}>
+    <Card backgroundColor='gunmetal'>
       {children}
     </Card>
   )

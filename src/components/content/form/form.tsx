@@ -33,7 +33,6 @@ export default function FormComponent() {
     console.log(message);
   };
   return (
-    <ContentCard>
       <div className="form-container">
         <form onSubmit={onSubmitHandler}>
           <Form.Field backgroundColor="gunmetal">
@@ -91,6 +90,7 @@ export default function FormComponent() {
           <Form.Field>
             <Form.Label textColor="flash-white">Message</Form.Label>
             <Form.Textarea
+              size={"small"}
               backgroundColor="flash-white"
               placeholder="..."
               color={`${message && message.length > 0 ? "cyan" : "flame"}`}
@@ -104,13 +104,12 @@ export default function FormComponent() {
           </Form.Field>
           <Form.Field kind="group">
             <Form.Control>
-              <Button color="flame" mt={2} type="submit">
+              <Button color="flame" mt={1} type="submit">
                 Submit
               </Button>
             </Form.Control>
           </Form.Field>
         </form>
       </div>
-    </ContentCard>
   );
 }

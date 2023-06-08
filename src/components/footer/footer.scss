@@ -5,8 +5,7 @@ $cyan: #66fcf1;
 $aquamarine: #45a29e;
 
 .footer-container {
-    left: 0;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     cursor: default;
 }
