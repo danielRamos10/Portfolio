@@ -15,8 +15,7 @@ function App() {
       <Contact />
       <FooterComponent />
     </>
-
-  )
+  );
 }
 
 export default App;

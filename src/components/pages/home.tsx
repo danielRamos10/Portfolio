@@ -10,7 +10,7 @@ function Home() {
       <div className="img-container">
         <div className="my-image"></div>
       </div>
-         <Button
+      <Button
         className="contact-btn"
         color="cyan"
         backgroundColor="gunmetal"
@@ -21,7 +21,6 @@ function Home() {
       >
         Let's Chat!
       </Button>
-     
     </div>
   );
 }

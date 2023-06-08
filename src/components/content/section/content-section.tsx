@@ -1,19 +1,22 @@
 import { Section, Container, Heading } from 'react-bulma-components'
 
-export default function ContentSection() {
+interface ContentProps{
+  title: string;
+  description: string;
+  image?: string|undefined;
+}
+ const ContentSection:React.FC<ContentProps> = ({title, description, image})=> {
   return (
-    <>
-    <Section mb={1} mt={1}>
+    <Section style={{zIndex:"1"}}>
       <Container>
-        <Heading textColor='flame'>
-          Section
+        <Heading textColor='cyan'>
+          {title}
         </Heading>
         <Heading subtitle textColor='flash-white'>
-          A simple container to divide your page into sections
-          , like the one you are currently reading
+         {description}
         </Heading>
       </Container>
     </Section>
-  </>
   )
 }
+export default ContentSection;
