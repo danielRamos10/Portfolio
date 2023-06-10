@@ -71,8 +71,6 @@ function NavBar() {
 
           <Navbar.Item renderAs="span">
             <Button
-              color="flame"
-              textColor="flash-white"
               textWeight="semibold"
               renderAs="a"
               href={resumePDF}

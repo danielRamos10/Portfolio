@@ -93,7 +93,7 @@ export default function FormComponent() {
               size={"small"}
               backgroundColor="flash-white"
               placeholder="..."
-              color={`${message && message.length > 0 ? "cyan" : "flame"}`}
+              color={`${message && message.length < 0 ? "cyan" : "flame"}`}
               onChange={onMessageChangeHandler}
             />
             {message && message.length > 0 ? (
@@ -104,7 +104,7 @@ export default function FormComponent() {
           </Form.Field>
           <Form.Field kind="group">
             <Form.Control>
-              <Button color="flame" mt={1} type="submit">
+              <Button outlined mt={1} type="submit">
                 Submit
               </Button>
             </Form.Control>

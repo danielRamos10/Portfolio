@@ -3,9 +3,8 @@ import { Section, Container, Heading, Image } from 'react-bulma-components'
 interface ContentProps{
   title: string;
   description: string;
-  image?: string;
 }
- const ContentSection:React.FC<ContentProps> = ({title, description, image})=> {
+ const ProjectSection:React.FC<ContentProps> = ({title, description})=> {
   return (
     <Section style={{zIndex:"1"}}>
       <Container>
@@ -19,4 +18,4 @@ interface ContentProps{
     </Section>
   )
 }
-export default ContentSection;
+export default ProjectSection;

@@ -1,14 +1,14 @@
-
-import './content-card.scss'
-import { Card } from 'react-bulma-components'
+import "./content-card.scss";
+import { Card } from "react-bulma-components";
 
 interface CardProps {
-children:JSX.Element;
+  children: JSX.Element;
 }
-export default function ContentCard({children}:CardProps) {
+export default function ContentCard({ children }: CardProps) {
   return (
-    <Card>
-      {children}
-    </Card>
-  )
+    <div className="about-card">
+      {" "}
+      <Card>{children}</Card>
+    </div>
+  );
 }

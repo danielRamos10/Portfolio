@@ -9,7 +9,11 @@
   grid-row-gap: 2px;
 }
 .headers {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 2; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .background {
@@ -25,15 +29,15 @@
 }
 .headers > .title {
   font-family: 'Syne', sans-serif;
-  font-size: 5rem;
-  margin-top: 10rem;
-  margin-left: 6rem;
+  font-style: italic;
+  font-size: 4rem;
+  margin-right: 5rem;
+
 }
 .headers > .subtitle {
   font-size: 8rem;
-  font-family: 'Syne', sans-serif;
-  margin-top: 10rem;
   margin-left: 10rem;
+  font-family: 'Syne', sans-serif;
   font-weight: bold;
 }
 
