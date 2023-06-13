@@ -26,25 +26,22 @@ $flash-white: #ebebeb;
 
 .home-container > .intro {
   color: $flash-white;
-  font-size: 3rem;
-  font-family: 'Syne', sans-serif;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 2px $aquamarine;
 }
 .home-container > .name {
     
   color: $cyan;
   font-size: 6rem;
-  font-family: 'Syne', sans-serif;
   text-shadow: 2px 4px 2px $aquamarine;
   overflow: hidden;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
 }
 
-.home-container > .ocupation {
+.home-container > .occupation {
   color: $flash-white;
   font-size: 2rem;
-  font-family: 'Syne', sans-serif;
   text-shadow: 2px 2px 2px $aquamarine;
 }
 
@@ -87,7 +84,7 @@ to {
     font-size: 2.5rem;
   
   }
-  .home-container > .ocupation {
+  .home-container > .occupation {
     font-size: 1.2rem;
 
   }

@@ -3,10 +3,12 @@ import { Section, Container, Heading, Image } from 'react-bulma-components'
 interface ContentProps{
   title: string;
   description: string;
+  image?: string
 }
  const ProjectSection:React.FC<ContentProps> = ({title, description})=> {
   return (
-    <Section style={{zIndex:"1"}}>
+    <div>
+      <Section>
       <Container>
         <Heading textColor='cyan'>
           {title}
@@ -16,6 +18,8 @@ interface ContentProps{
         </Heading>
       </Container>
     </Section>
+    </div>
+    
   )
 }
 export default ProjectSection;

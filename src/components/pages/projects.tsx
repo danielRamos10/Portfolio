@@ -7,9 +7,9 @@ function Project() {
   return (
     <div id="projectsComponent" className="project-container">
       <Heading textColor="cyan">Projects</Heading>
-      <div className="project-parent">
+      <div className="project-grid-parent">
         <div className="leafybuddy">
-          <ProjectCard image={ProjectContent[0].image || ''}>
+          <ProjectCard >
             <ProjectSection
               title={ProjectContent[0].title}
               description={ProjectContent[0].description}
@@ -17,23 +17,23 @@ function Project() {
           </ProjectCard>
         </div>
         <div className="riovax">
-          <ProjectCard image={ProjectContent[1].image || ''}>
+          <ProjectCard >
             <ProjectSection
-                          title={ProjectContent[1].title}
-                          description={ProjectContent[1].description}          />
+              title={ProjectContent[1].title}
+              description={ProjectContent[1].description} />
           </ProjectCard>
         </div>
         <div className="pixelgram">
-          <ProjectCard  image={ProjectContent[2].image || ''}>
+          <ProjectCard >
             <ProjectSection
-    
+
               title={ProjectContent[2].title}
               description={ProjectContent[2].description}
             />
           </ProjectCard>
         </div>
         <div className="jbook">
-          <ProjectCard image={ProjectContent[3].image || ''}>
+          <ProjectCard >
             <ProjectSection
               title={ProjectContent[3].title}
               description={ProjectContent[3].description}

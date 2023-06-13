@@ -1,18 +1,10 @@
 @charset 'utf-8';
 @import "/node_modules/bulma/sass/utilities/functions.sass";
 @import "/node_modules/bulma/sass/utilities/initial-variables.sass";
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 footer, body, html{
   background-color: #1f2833 !important;
 }
-nav{
-  background-color:rgba(31, 40, 51, 0.5);
-}
+
 /* colors palette: */
 $custom-colors: (
   "cyan": (

@@ -1,13 +1,12 @@
-import { Section, Container, Heading, Image } from 'react-bulma-components'
+import { Section, Container, Heading } from 'react-bulma-components'
 
 interface ContentProps{
   title: string;
   description: string;
-  image?: string;
 }
- const ContentSection:React.FC<ContentProps> = ({title, description, image})=> {
+ const ContentSection:React.FC<ContentProps> = ({title, description})=> {
   return (
-    <Section style={{zIndex:"1"}}>
+    <Section style={{zIndex: '1'}}>
       <Container>
         <Heading textColor='cyan'>
           {title}
