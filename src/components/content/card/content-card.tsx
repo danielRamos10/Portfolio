@@ -7,7 +7,6 @@ interface CardProps {
 export default function ContentCard({ children }: CardProps) {
   return (
     <div className="about-card">
-      {" "}
       <Card>{children}</Card>
     </div>
   );

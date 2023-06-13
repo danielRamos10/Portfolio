@@ -5,11 +5,11 @@ $flame: rgb(228, 87, 46);
 $aquamarine: rgb(69, 162, 158);
 $flash-white: #ebebeb;
 
-.about-card> .card {
+.about-card > .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(31, 40, 51, 0.5) !important;
+  background-color: $gunmetal-flush;
   width: 500px;
   height: 500px;
   border-radius: 20px !important;
@@ -20,37 +20,34 @@ $flash-white: #ebebeb;
   height: 100%;
   height: 100%;
   width: 810px;
-  content: '';
-  background: linear-gradient( $cyan, $flash-white, $flame);
-   animation: rotate 8s ease-in infinite;
+  content: "";
+  background: linear-gradient($cyan, $flash-white, $flame);
+  animation: rotate 8s ease-in infinite;
 }
-.about-card> .card::after{
-  content: '';
+.about-card > .card::after {
+  content: "";
   position: absolute;
   background-color: $gunmetal;
   inset: 6px;
   border-radius: 16px;
 }
 @keyframes rotate {
- from {
-  transform: rotate(0deg);
-
- }
- to {
-  transform: rotate(360deg);
- }
-  
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .about-card> .card {
+  .about-card > .card {
     width: 100%;
     height: 400px;
   }
-  .about-card> .card::before{
+  .about-card > .card::before {
     animation: none;
-    background: $gunmetal!important;
+    background: $gunmetal;
     width: 100%;
-
   }
 }

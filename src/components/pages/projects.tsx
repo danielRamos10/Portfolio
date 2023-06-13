@@ -9,7 +9,7 @@ function Project() {
       <Heading textColor="cyan">Projects</Heading>
       <div className="project-grid-parent">
         <div className="leafybuddy">
-          <ProjectCard >
+          <ProjectCard>
             <ProjectSection
               title={ProjectContent[0].title}
               description={ProjectContent[0].description}

@@ -6,7 +6,36 @@ $aquamarine: #45a29e;
 $flash-white: #ebebeb;
 
 .project-card > .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 800px;
   height: 350px;
   border-radius: 20px !important;
+  background-color: $gunmetal-flush;
+  overflow: hidden !important;
+}
+.project-card > .card::before {
+  position: absolute;
+  height: 100%;
+  height: 100%;
+  width: 810px;
+  content: "";
+  background: linear-gradient($cyan, $flash-white, $flame);
+  animation: rotate 16s ease-in infinite;
+}
+.project-card > .card::after {
+  content: "";
+  position: absolute;
+  background-color: $gunmetal;
+  inset: 6px;
+  border-radius: 16px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

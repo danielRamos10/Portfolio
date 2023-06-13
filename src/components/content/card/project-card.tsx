@@ -8,7 +8,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ children }) => {
   return (
     <div className="project-card">
       <Card>
-           {children}
+        {children}
       </Card>
     </div>
   );
