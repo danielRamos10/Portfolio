@@ -42,12 +42,8 @@ $flash-white: #ebebeb;
 
 @media only screen and (max-width: 768px) {
   .about-card > .card {
-    width: 100%;
+    width: 90dvw;
     height: 400px;
   }
-  .about-card > .card::before {
-    animation: none;
-    background: $gunmetal;
-    width: 100%;
-  }
+ 
 }

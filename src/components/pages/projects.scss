@@ -18,7 +18,6 @@ $flex-direction: column;
   width: 100%;
 }
 .project-container > .title {
-  margin-top: 8rem;
   font-size: 5rem !important;
   width: 100%;
   text-align: center;
@@ -29,7 +28,7 @@ $flex-direction: column;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 20px;
+  row-gap: 20px;
 }
 
 .leafybuddy {
@@ -46,3 +45,11 @@ $flex-direction: column;
   grid-area: 4 / 1 / 5 / 2;
 }
 
+@media only screen and (max-width: 768px) {
+  .project-grid-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

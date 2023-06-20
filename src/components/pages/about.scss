@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(3, 2fr);
+  row-gap: 20px;
 }
 .headers {
   display: flex;

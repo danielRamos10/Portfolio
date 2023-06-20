@@ -48,7 +48,7 @@ $flash-white: #ebebeb;
 /*Animation*/
 
 .anim-typewriter {
-animation: typewriter 4s steps(40) 1s infinite,
+animation: typewriter 5s steps(40) 1s infinite,
 blinkTextCursor 10s steps(40) normal infinite;
 }
 
@@ -57,7 +57,7 @@ from {
       width: 0;
 }
 to {
-      width: 48%;
+      width: 62%;
 }
 }
 

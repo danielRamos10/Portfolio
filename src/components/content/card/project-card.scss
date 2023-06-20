@@ -39,3 +39,9 @@ $flash-white: #ebebeb;
     transform: rotate(360deg);
   }
 }
+@media only screen and (max-width: 768px){
+  .project-card > .card{
+    width: 90dvw;
+  }
+
+}
