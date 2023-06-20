@@ -45,11 +45,16 @@ $flex-direction: column;
   grid-area: 4 / 1 / 5 / 2;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px), (max-width: 960px) {
   .project-grid-parent{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .project-container > .title {
+    font-size: 2rem !important;
+    width: 100%;
+    text-align: center;
   }
 }

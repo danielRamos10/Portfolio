@@ -15,8 +15,9 @@ import resumePDF from "/src/Resume-JDRP.pdf";
 function NavBar() {
   const [toggle, setToggle] = useState(false);
 
-  
+
   const scrollToTop = () => {
+    setToggle(!toggle);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
@@ -39,30 +40,32 @@ function NavBar() {
       </Navbar.Brand>
 
       <Navbar.Menu
-     
+
         className={`navbar-menu ${toggle ? "is-active" : ""}`}
         alignContent="center"
       >
         <Navbar.Container align="right">
-          <Navbar.Item onClick={scrollToTop}>
+          <Navbar.Item onClick={
+            scrollToTop
+          }>
             <span>
               <FontAwesomeIcon icon={faHouse} />
             </span>
             Home
           </Navbar.Item>
-          <Navbar.Item href="#aboutComponent">
+          <Navbar.Item href="#aboutComponent" onClick={() => { setToggle(!toggle) }}>
             <span>
               <FontAwesomeIcon icon={faAddressCard} />
             </span>
             About
           </Navbar.Item>
-          <Navbar.Item href="#projectsComponent">
+          <Navbar.Item href="#projectsComponent" onClick={() => { setToggle(!toggle) }}>
             <span>
               <FontAwesomeIcon icon={faLaptop} />
             </span>
             Projects
           </Navbar.Item>
-          <Navbar.Item href="#contactComponent">
+          <Navbar.Item href="#contactComponent" onClick={() => { setToggle(!toggle) }}>
             <span>
               <FontAwesomeIcon icon={faPhone} />
             </span>

@@ -50,7 +50,7 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px ), (max-width: 960px){
   .about-grid-parent {
     display: flex;
     flex-direction: column;
@@ -58,16 +58,14 @@
     height: 800px;
   }
   .headers > .title {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 6rem;
     margin-left: 0;
   }
   .headers > .subtitle {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 6rem;
-    margin-left: 0;
+    margin-right: 0;
   }
-  .education{
-    margin-left:0 ;
-  }
+ 
 }

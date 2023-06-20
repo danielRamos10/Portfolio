@@ -16,3 +16,10 @@ $flex-direction:column;
    font-size: 4rem;
 }
 
+@media screen  and (max-width: 768px), (max-width: 960px){
+    .contact-container > .title{
+        font-size: 2rem;
+    }
+    
+}
+

@@ -30,8 +30,8 @@ $flash-white: #ebebeb;
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px), (max-width: 960px){
     .form-container {
-        width: 350px;
+        width: 80dvw;
     }
 }

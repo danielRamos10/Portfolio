@@ -39,9 +39,15 @@ $flash-white: #ebebeb;
     transform: rotate(360deg);
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px), (max-width: 960px){
   .project-card > .card{
     width: 90dvw;
+  }
+  .section > .container > .title {
+    font-size: 1.2rem !important;
+  }
+  .section > .container > .subtitle {
+    font-size: 95% !important;
   }
 
 }

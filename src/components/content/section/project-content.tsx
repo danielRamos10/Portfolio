@@ -12,7 +12,7 @@ const ProjectSection: React.FC<ContentProps> = ({ title, description }) => {
         <Heading textColor='cyan'>
           {title}
         </Heading>
-        <Heading subtitle textColor='flash-white'>
+        <Heading subtitle textColor='flash-white' >
           {description}
         </Heading>
       </Container>
