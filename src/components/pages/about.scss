@@ -9,7 +9,9 @@
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(3, 2fr);
   row-gap: 20px;
+  overflow: hidden;
 }
+
 .headers {
   display: flex;
   flex-direction: column;

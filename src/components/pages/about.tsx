@@ -1,15 +1,16 @@
 import { Heading } from "react-bulma-components";
 import { AboutContent } from "../../data/content";
-
 import "./about.scss";
 import ContentCard from "../content/card/content-card";
 import ContentSection from "../content/section/content-section";
 
+
+
 function About() {
+ 
   return (
     <div id="aboutComponent" className="about-container">
-
-      <div className="about-grid-parent">
+      <div className="about-grid-parent" >
         <div className="headers">
           <Heading textColor="cyan">About</Heading>
           <Heading textColor="cyan" subtitle>
@@ -36,14 +37,16 @@ function About() {
           <ContentCard>
             <ContentSection
               title={AboutContent[2].title}
-              description={AboutContent[1].description}
+              description={AboutContent[2].description}
             />
           </ContentCard>
         </div>
 
-      </div>
+    </div>
 
     </div>
   );
 }
 export default About;
+
+
