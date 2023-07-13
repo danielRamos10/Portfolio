@@ -26,6 +26,11 @@ $flash-white: #ebebeb;
   align-items: center;
   grid-area: 1 / 1 / 2 / 2;
 }
+.hond{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
 
 .background {
   display: flex;
@@ -49,10 +54,11 @@ $flash-white: #ebebeb;
   grid-area: 2/2/3/3;
 }
 .vaqueros img{
-  width: 600px;
+  width: 500px;
 }
 .vaq-img{
   border-radius: 20px;
+  border: solid 6px linear-gradient($cyan, $flame);
   
 }
 .vaq-img:hover{
@@ -78,8 +84,7 @@ $flash-white: #ebebeb;
 }
 
 .fcb {
-  margin-top: 2rem;
-  position: relative;
+  margin-top: 3rem;
   grid-area: 3/1/4/2;
   display: flex;
   flex-direction: column;
@@ -90,16 +95,16 @@ $flash-white: #ebebeb;
 .fcb img{
   cursor: pointer;
   width: 600px;
-  height: 450px;
+  height: 400px;
   position: absolute;
-  transform-origin: left;
+  transform-origin: center;
   
 }
 .img-1 {
   border-radius: 20px;
   border: 7px solid $cyan;
   clip-path: polygon(0 0, 0 32%, 28% 0);
-  transform: translate(-10px, -10px);
+  transform: translate(-5px, -10px);
   transition: transform 300ms ease;
   transform-origin: top;
   .fcb:hover & {
@@ -111,7 +116,7 @@ $flash-white: #ebebeb;
   border: 7px solid $flame;
   border-radius: 20px;
   clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
-  transform: translate(-30px, 5px);
+  transform: translate(-20px, 5px);
   transition: transform 300ms ease;
   .fcb:hover & {
     transform: translate(0,0);
@@ -122,7 +127,7 @@ $flash-white: #ebebeb;
   border: 7px solid $cyan;
   border-radius: 20px;
   clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
-  transform: translate(-15px, -10px);
+  transform: translate(-10px, -10px);
   transition: transform 300ms ease;
   .fcb:hover & {
     transform: translate(0,0);
@@ -133,7 +138,7 @@ $flash-white: #ebebeb;
   border: 7px solid $flame;
   border-radius: 20px;
   clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
-  transform: translate(-32px, 5px);
+  transform: translate(-25px, 5px);
   transition: transform 300ms ease;
   transform-origin: top;
   .fcb:hover & {
@@ -158,18 +163,25 @@ $flash-white: #ebebeb;
 }
 
 @media only screen and (max-width: 768px), (max-width: 960px) {
+
   .about-grid-parent {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 1700px;
+   
+  }
+  .fcb img{
+    display: hidden;
+  }
+
+  .img-2, .img-3, .img-4{
+    display: none;
   }
   .vaqueros img{
     display: none;
   }
-  .fcb img{
-    display: none;
-  }
+
 
   .headers > .title {
     font-size: 2rem;

@@ -13,6 +13,7 @@ function Project() {
             <ProjectSection
               title={ProjectContent[0].title}
               description={ProjectContent[0].description}
+              image={ProjectContent[0].image}
             />
           </ProjectCard>
         </div>
@@ -20,15 +21,16 @@ function Project() {
           <ProjectCard >
             <ProjectSection
               title={ProjectContent[1].title}
-              description={ProjectContent[1].description} />
+              description={ProjectContent[1].description}
+              image={ProjectContent[1].image} />
           </ProjectCard>
         </div>
         <div className="pixelgram">
           <ProjectCard >
             <ProjectSection
-
               title={ProjectContent[2].title}
               description={ProjectContent[2].description}
+              image={ProjectContent[2].image}
             />
           </ProjectCard>
         </div>
@@ -37,6 +39,7 @@ function Project() {
             <ProjectSection
               title={ProjectContent[3].title}
               description={ProjectContent[3].description}
+              image={ProjectContent[3].image}
             />
           </ProjectCard>
         </div>

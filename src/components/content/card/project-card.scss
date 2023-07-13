@@ -10,11 +10,10 @@ $flash-white: #ebebeb;
   justify-content: center;
   align-items: center;
   width: 800px;
-  height: 350px;
+  height: 600px;
   border-radius: 20px !important;
   background-color: $gunmetal-flush;
   overflow: hidden !important;
-  cursor: pointer;
 }
 .project-card > .card::before {
   position: absolute;
