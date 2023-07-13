@@ -1,10 +1,17 @@
+$cyan: #66fcf1;
+$gunmetal: rgb(31, 40, 51);
+$gunmetal-flush: rgba(31, 40, 51, 0.5);
+$flame: rgb(228, 87, 46);
+$aquamarine: rgb(69, 162, 158);
+$flash-white: #ebebeb;
 
-.about-container{
-  height: 1700px;
+
+.about-container {
+  height: 1800px;
   width: 100%;
 }
 
-.about-grid-parent{
+.about-grid-parent {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(3, 2fr);
@@ -17,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-area: 1 / 1 / 2 / 2; 
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .background {
@@ -34,6 +41,105 @@
   justify-content: center;
   grid-area: 2 / 1 / 3 / 2;
 }
+.vaqueros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: 2/2/3/3;
+}
+.vaqueros img{
+  width: 600px;
+}
+.vaq-img{
+  border-radius: 20px;
+  
+}
+.vaq-img:hover{
+  cursor: pointer;
+  animation: expand .5s cubic-bezier(.16,.03,.27,.69) infinite;
+}
+@keyframes expand {
+	0% {
+		transform: scale(1) translate(0, 0);
+	}
+	25% {
+		transform: scale(1) translateX(-15px, 5px);
+	}
+	50% {
+		transform: scale(1.2) translate(0, 0);
+	}
+	75% {
+		transform: scale(1) translate(15px, -5px);
+	}
+	100% {
+		transform: scale(1) translate(0, 0);
+	}
+}
+
+.fcb {
+  margin-top: 2rem;
+  position: relative;
+  grid-area: 3/1/4/2;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+ 
+}
+
+.fcb img{
+  cursor: pointer;
+  width: 600px;
+  height: 450px;
+  position: absolute;
+  transform-origin: left;
+  
+}
+.img-1 {
+  border-radius: 20px;
+  border: 7px solid $cyan;
+  clip-path: polygon(0 0, 0 32%, 28% 0);
+  transform: translate(-10px, -10px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  .fcb:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.img-2 {
+  border: 7px solid $flame;
+  border-radius: 20px;
+  clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+  transform: translate(-30px, 5px);
+  transition: transform 300ms ease;
+  .fcb:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.img-3 {
+  border: 7px solid $cyan;
+  border-radius: 20px;
+  clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+  transform: translate(-15px, -10px);
+  transition: transform 300ms ease;
+  .fcb:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.img-4 {
+  border: 7px solid $flame;
+  border-radius: 20px;
+  clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+  transform: translate(-32px, 5px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  .fcb:hover & {
+    transform: translate(0,0);
+  }
+}
 .hobbies {
   display: flex;
   flex-direction: column;
@@ -44,7 +150,6 @@
   font-style: italic;
   font-size: 4rem;
   margin-right: 5rem;
-
 }
 .headers > .subtitle {
   font-size: 8rem;
@@ -52,13 +157,20 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px ), (max-width: 960px){
+@media only screen and (max-width: 768px), (max-width: 960px) {
   .about-grid-parent {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 800px;
+    height: 1700px;
   }
+  .vaqueros img{
+    display: none;
+  }
+  .fcb img{
+    display: none;
+  }
+
   .headers > .title {
     font-size: 2rem;
     margin-top: 6rem;
@@ -69,5 +181,4 @@
     margin-top: 6rem;
     margin-right: 0;
   }
- 
 }
