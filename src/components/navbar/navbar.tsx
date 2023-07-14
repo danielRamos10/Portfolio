@@ -1,7 +1,7 @@
 import "./navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "/src/assets/log_svg.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Navbar, Button } from "react-bulma-components";
 import {
   faAddressCard,

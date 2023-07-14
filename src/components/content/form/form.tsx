@@ -4,7 +4,6 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./form.scss";
-import ContentCard from "../card/content-card";
 import { useState } from "react";
 import { Button, Form, Icon } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
