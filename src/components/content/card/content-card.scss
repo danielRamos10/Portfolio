@@ -21,7 +21,7 @@ $flash-white: #ebebeb;
   height: 100%;
   width: 810px;
   content: "";
-  background: linear-gradient($cyan, $flash-white, $flame);
+  background: linear-gradient($cyan, $flash-white);
   animation: rotate 8s ease-in infinite;
 }
 .about-card > .card::after {
