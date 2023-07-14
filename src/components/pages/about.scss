@@ -6,7 +6,7 @@ $aquamarine: rgb(69, 162, 158);
 $flash-white: #ebebeb;
 
 .about-container {
-  height: 1700px;
+  height: 1800px;
   width: 100%;
 }
 
@@ -15,11 +15,15 @@ $flash-white: #ebebeb;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(3, 2fr);
   row-gap: 20px;
-  overflow: hidden;
 }
 
 .headers {
   display: flex;
+  margin-top: 2.5rem;
+  background: url("/src/assets/hd-us.png") no-repeat;
+  background-blend-mode:overlay;
+  background-size:cover;
+  background-color: $gunmetal;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -150,42 +154,76 @@ $flash-white: #ebebeb;
 .headers > .title {
   font-style: italic;
   font-size: 4rem;
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 .headers > .subtitle {
   font-size: 8rem;
-  margin-left: 10rem;
+  margin-left: 8rem;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 768px), (max-width: 960px) {
-  .about-grid-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .about-container {
+    height: 2800px;
     width: 100%;
   }
-  .fcb img {
-    display: hidden;
+  .about-grid-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
   }
-
-  .img-2,
-  .img-3,
-  .img-4 {
-    display: none;
+ 
+  .vaqueros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 4 / 1 / 5 / 2;
   }
-  .vaqueros img {
-    display: none;
-  }
+  
 
   .headers > .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 6rem;
     margin-left: 0;
   }
   .headers > .subtitle {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-top: 6rem;
-    margin-right: 0;
+  }
+  .headers{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .background{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .education{
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hobbies{
+    grid-area: 5 / 1 / 6 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fcb{
+    display: flex;
+    align-items: center;
+   
+    grid-area: 6 / 1 / 7 / 2;
+
+  }
+  .fcb img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    transform-origin: center;
   }
 }

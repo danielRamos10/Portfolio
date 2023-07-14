@@ -6,8 +6,15 @@ $flame: rgb(228, 87, 46);
 $aquamarine: rgb(69, 162, 158);
 $flash-white: #ebebeb;
 .project-image{
-    height: 300px;
+    height: 320px;
     width: 100%;
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 768px), (max-width: 960px) {
+    .project-image{
+        height: 250px;
+        width: 100%;
+        border-radius: 20px;
+    }
+}

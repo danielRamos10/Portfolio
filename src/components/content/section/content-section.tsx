@@ -6,9 +6,9 @@ interface ContentProps{
 }
  const ContentSection:React.FC<ContentProps> = ({title, description})=> {
   return (
-    <Section style={{zIndex: '1'}}>
+    <Section style={{zIndex: '1'}} p={6}>
       <Container>
-        <Heading textColor='cyan'>
+        <Heading textColor='cyan' textAlign={'center'} mt={5}>
           {title}
         </Heading>
         <Heading subtitle textColor='flash-white'>

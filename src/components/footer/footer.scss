@@ -11,7 +11,7 @@ $aquamarine: #45a29e;
 }
 
 .inside__footer{
-    height: 70px;
+    height: 80px;
     width: 100%;
     margin:auto;
     display: flex;
@@ -34,12 +34,21 @@ $aquamarine: #45a29e;
 }
 .icon{
     display: inline-block;
-    width: 28px;
-    height: 28px;
-    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
     color: $aquamarine;
     &:hover{
         color: $cyan;
     }
 }
 
+@media only screen and (max-width: 768px), (max-width: 960px){
+   .copyright{
+    font-size: .8rem;
+   }
+   .icon{
+    height: 20px;
+    width: 20px;
+   }
+}
