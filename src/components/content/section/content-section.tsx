@@ -6,12 +6,12 @@ interface ContentProps{
 }
  const ContentSection:React.FC<ContentProps> = ({title, description})=> {
   return (
-    <Section style={{zIndex: '1'}} p={6}>
+    <Section style={{zIndex: '1'}} >
       <Container>
-        <Heading textColor='cyan' textAlign={'center'} mt={5}>
+        <Heading textColor='cyan' textAlign={'center'}>
           {title}
         </Heading>
-        <Heading subtitle textColor='flash-white'>
+        <Heading subtitle textColor='flash-white' mt={1}>
          {description}
         </Heading>
       </Container>

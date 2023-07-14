@@ -10,7 +10,7 @@ const ProjectSection: React.FC<ContentProps> = ({ title, description, image}) =>
     <Section style={{ zIndex: "1" }}>
       <Container>
         <Heading textColor="flame" textAlign={'center'}>{title}</Heading>
-        <Heading subtitle textColor="flash-white">
+        <Heading subtitle textColor="flash-white" mt={1}>
           {description}
         </Heading>
         <img className='project-image' src={image} alt="image"/>
