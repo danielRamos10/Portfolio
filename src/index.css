@@ -10,7 +10,8 @@ html {
   font-size: 62.5%;
   background-color: #1f2833;
   scroll-behavior: smooth !important;
-  overflow: scroll;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 body{
   font-family: 'Syne', sans-serif !important;
