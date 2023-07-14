@@ -6,7 +6,7 @@ import { Heading } from "react-bulma-components";
 import leafybuddy from '/src/assets/leafybuddy.png';
 import pixelgram from '/src/assets/pixelgram.png';
 import riovax from '/src/assets/riovax.png';
-import jbook from '/src/assets/jbook.png';
+import jbook from '/src/assets/jbook-img.png';
 
 function Project() {
   return (
