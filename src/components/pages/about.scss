@@ -172,6 +172,9 @@ $flash-white: #ebebeb;
     grid-column-gap: 0px;
     grid-row-gap: 10px;
   }
+  .img-1, .img-2, .img-3, .img-4 {
+    transform: translate(0,0);
+  }
  
   .vaqueros{
     display: flex;
@@ -209,6 +212,7 @@ $flash-white: #ebebeb;
     width: 80dvw;
   }
   .vaq-img:hover {
+    cursor: default;
     animation: none;
   }
  
