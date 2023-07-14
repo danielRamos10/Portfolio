@@ -7,11 +7,11 @@ export const AboutContent = [
   {
     title: "Education",
     description:
-      "In 2017, I graduated from South Texas College with an Associates degree in Computer Science, where I gained a solid foundation in programming languages, algorithms, and software development principles. Driven by my passion for innovation and a desire to deepen my knowledge, I continued my education at the University of Texas at Rio Grande. There, I pursued a Bachelor of Science in Computer Engineering, which I successfully obtained in 2021. This program allowed me to expand my expertise in hardware and software design, computer architecture, and system analysis.",
+      "In 2017, I graduated from South Texas College with an Associates degree in Computer Science, where I gained a solid foundation in programming languages, algorithms, and software development principles. Driven by my passion for innovation and a desire to deepen my knowledge, I continued my education at the University of Texas at Rio Grande Valley. There, I pursued a Bachelor of Science in Computer Engineering, which I successfully obtained in 2021. This program allowed me to expand my expertise in hardware and software design, computer architecture, and system analysis.",
   },
   {
     title: "Hobbies",
     description:
-      "I am a passionate fan of soccer, particularly FC Barcelona, and football, with a strong allegiance to the Dallas Cowboys. These teams inspire me with their dedication, teamwork, and commitment to excellence. Alongside my love for sports, I have a keen interest in the latest technologies and frameworks. Exploring innovations in the tech industry excites and motivates me. Beyond technology, I find joy in physical activities and spending time with friends. Playing video games with friends combines my love for technology with social interaction and friendly competition.",
+      "I am a passionate fan of soccer, particularly FC Barcelona, and football, with a strong allegiance to the Dallas Cowboys. These teams inspire me with their dedication, teamwork, and commitment to excellence. Alongside my love for sports, I have a keen interest in the latest technologies and frameworks. Beyond technology, I find joy in physical activities and spending time with friends. Playing video games with friends combines my love for technology with social interaction and friendly competition.",
   },
 ];

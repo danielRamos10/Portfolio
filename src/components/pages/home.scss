@@ -29,8 +29,7 @@ $flash-white: #ebebeb;
   font-size: 2.5rem;
   text-shadow: 2px 2px 2px $aquamarine;
 }
-.home-container > .name {
-    
+.home-container > .name { 
   color: $cyan;
   font-size: 6rem;
   text-shadow: 2px 4px 2px $aquamarine;
@@ -79,14 +78,14 @@ to {
     justify-content: center;
   }
   .home-container > .intro {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .home-container > .name {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   
   }
   .home-container > .occupation {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 
   }
 
@@ -95,7 +94,7 @@ to {
           width: 0;
     }
     to {
-          width: 60%;
+          width: 83%;
     }
     }
 }
