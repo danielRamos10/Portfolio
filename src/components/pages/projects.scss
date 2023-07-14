@@ -98,4 +98,9 @@ $flex-direction: column;
     width: 100%;
     text-align: center;
   }
+  .jbook img {
+    &:hover{
+     animation:none;
+    }
+  }
 }
