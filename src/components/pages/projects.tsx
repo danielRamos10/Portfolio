@@ -3,6 +3,11 @@ import ProjectSection from "../content/section/project-content";
 import "./projects.scss";
 import { ProjectContent } from "../../data/project-content";
 import { Heading } from "react-bulma-components";
+import leafybuddy from '/src/assets/leafybuddy.png';
+import pixelgram from '/src/assets/pixelgram.png';
+import riovax from '/src/assets/riovax.png';
+import jbook from '/src/assets/jbook.png';
+
 function Project() {
   return (
     <div id="projectsComponent" className="project-container">
@@ -13,7 +18,7 @@ function Project() {
             <ProjectSection
               title={ProjectContent[0].title}
               description={ProjectContent[0].description}
-              image={ProjectContent[0].image}
+              image={leafybuddy}
             />
           </ProjectCard>
         </div>
@@ -22,7 +27,7 @@ function Project() {
             <ProjectSection
               title={ProjectContent[1].title}
               description={ProjectContent[1].description}
-              image={ProjectContent[1].image} />
+              image={riovax} />
           </ProjectCard>
         </div>
         <div className="pixelgram">
@@ -30,7 +35,7 @@ function Project() {
             <ProjectSection
               title={ProjectContent[2].title}
               description={ProjectContent[2].description}
-              image={ProjectContent[2].image}
+              image={pixelgram}
             />
           </ProjectCard>
         </div>
@@ -39,7 +44,7 @@ function Project() {
             <ProjectSection
               title={ProjectContent[3].title}
               description={ProjectContent[3].description}
-              image={ProjectContent[3].image}
+              image={jbook}
             />
           </ProjectCard>
         </div>
