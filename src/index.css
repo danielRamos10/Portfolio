@@ -7,11 +7,9 @@
   padding: 0;
 }
 html {
-  font-size: 62.5%;
   background-color: #1f2833;
-  scroll-behavior: smooth !important;
-  overflow-y: scroll !important;
-  -webkit-overflow-scrolling: touch !important;
+  scroll-behavior: smooth !important; 
+ 
 }
 body{
   font-family: 'Syne', sans-serif !important;
