@@ -14,11 +14,10 @@ $flex-direction: column;
   flex-direction: $flex-direction;
   align-items: $align-items;
   justify-content: $justify-content;
-  height: 2700px;
+  height: 2800px;
   width: 100%;
 }
 .project-container > .title {
-  margin-top: 6rem;
   font-size: 5rem !important;
   width: 100%;
   text-align: center;

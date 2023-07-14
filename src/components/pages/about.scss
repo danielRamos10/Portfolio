@@ -14,13 +14,14 @@ $flash-white: #ebebeb;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(3, 2fr);
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 .headers {
   display: flex;
   background: url("/src/assets/hd-us.png") no-repeat;
   background-size: cover;
+  background-position-x: center;
   background-blend-mode:darken;
   background-attachment:scroll;
   background-clip:padding-box;
@@ -159,9 +160,9 @@ $flash-white: #ebebeb;
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px), (max-width: 960px) {
+@media only screen and (max-width: 768px), (max-width: 960px), (max-width: 1020px) {
   .about-container {
-    height: 2800px;
+    height: 3150px;
     width: 100%;
   }
   .about-grid-parent {
@@ -187,6 +188,7 @@ $flash-white: #ebebeb;
     font-size: 3.5rem;
   }
   .headers{
+    margin-top: 6rem;
     grid-area: 1 / 1 / 2 / 2;
   }
   .background{
@@ -202,10 +204,9 @@ $flash-white: #ebebeb;
     display: flex;
     align-items: center;
     grid-area: 6 / 1 / 7 / 2;
-
   }
-  .fcb img {
-    width: 320px;
-    height: 270px;
+  .fcb img{
+    width: 80dvw;
   }
+ 
 }
