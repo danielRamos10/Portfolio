@@ -11,7 +11,7 @@ import jbook from '/src/assets/jbook-img.png';
 function Project() {
   return (
     <div id="projectsComponent" className="project-container">
-      <Heading textColor="cyan">Projects</Heading>
+      <Heading textColor="flame">Projects</Heading>
       <div className="project-grid-parent">
         <div className="leafybuddy">
           <ProjectCard>
