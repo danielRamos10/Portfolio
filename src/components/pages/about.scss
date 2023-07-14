@@ -5,9 +5,8 @@ $flame: rgb(228, 87, 46);
 $aquamarine: rgb(69, 162, 158);
 $flash-white: #ebebeb;
 
-
 .about-container {
-  height: 1800px;
+  height: 1700px;
   width: 100%;
 }
 
@@ -26,7 +25,7 @@ $flash-white: #ebebeb;
   align-items: center;
   grid-area: 1 / 1 / 2 / 2;
 }
-.hond{
+.hond {
   position: absolute;
   width: 300px;
   height: 300px;
@@ -53,34 +52,33 @@ $flash-white: #ebebeb;
   justify-content: center;
   grid-area: 2/2/3/3;
 }
-.vaqueros img{
+.vaqueros img {
   width: 500px;
 }
-.vaq-img{
+.vaq-img {
   border-radius: 20px;
   border: solid 6px linear-gradient($cyan, $flame);
-  
 }
-.vaq-img:hover{
+.vaq-img:hover {
   cursor: pointer;
-  animation: expand .5s cubic-bezier(.16,.03,.27,.69) infinite;
+  animation: expand 0.5s cubic-bezier(0.16, 0.03, 0.27, 0.69) infinite;
 }
 @keyframes expand {
-	0% {
-		transform: scale(1) translate(0, 0);
-	}
-	25% {
-		transform: scale(1) translateX(-15px, 5px);
-	}
-	50% {
-		transform: scale(1.2) translate(0, 0);
-	}
-	75% {
-		transform: scale(1) translate(15px, -5px);
-	}
-	100% {
-		transform: scale(1) translate(0, 0);
-	}
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1) translateX(-15px, 5px);
+  }
+  50% {
+    transform: scale(1.2) translate(0, 0);
+  }
+  75% {
+    transform: scale(1) translate(15px, -5px);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
 }
 
 .fcb {
@@ -89,16 +87,14 @@ $flash-white: #ebebeb;
   display: flex;
   flex-direction: column;
   align-items: end;
- 
 }
 
-.fcb img{
+.fcb img {
   cursor: pointer;
   width: 600px;
   height: 400px;
   position: absolute;
   transform-origin: center;
-  
 }
 .img-1 {
   border-radius: 20px;
@@ -108,7 +104,7 @@ $flash-white: #ebebeb;
   transition: transform 300ms ease;
   transform-origin: top;
   .fcb:hover & {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 
@@ -119,7 +115,7 @@ $flash-white: #ebebeb;
   transform: translate(-20px, 5px);
   transition: transform 300ms ease;
   .fcb:hover & {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 
@@ -130,7 +126,7 @@ $flash-white: #ebebeb;
   transform: translate(-10px, -10px);
   transition: transform 300ms ease;
   .fcb:hover & {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 
@@ -142,7 +138,7 @@ $flash-white: #ebebeb;
   transition: transform 300ms ease;
   transform-origin: top;
   .fcb:hover & {
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 .hobbies {
@@ -163,25 +159,24 @@ $flash-white: #ebebeb;
 }
 
 @media only screen and (max-width: 768px), (max-width: 960px) {
-
   .about-grid-parent {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-   
   }
-  .fcb img{
+  .fcb img {
     display: hidden;
   }
 
-  .img-2, .img-3, .img-4{
+  .img-2,
+  .img-3,
+  .img-4 {
     display: none;
   }
-  .vaqueros img{
+  .vaqueros img {
     display: none;
   }
-
 
   .headers > .title {
     font-size: 2rem;
