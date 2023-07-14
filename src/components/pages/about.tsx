@@ -4,7 +4,7 @@ import "./about.scss";
 import ContentCard from "../content/card/content-card";
 import ContentSection from "../content/section/content-section";
 import vaqueroslogo from "/src/assets/vaqueros.png";
-import fcb from '/src/assets/fcb.jpg';
+import fcb from "/src/assets/fcb.jpg";
 // import hon from '/src/assets/hd-us.png';
 
 function About() {
