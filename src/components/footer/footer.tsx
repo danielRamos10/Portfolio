@@ -8,11 +8,11 @@ function FooterComponent() {
         <p className="copyright">&copy; Daniel Ramos. All Rights Reserved.</p>
         <div className="social">
           <a
-            href="https://linkedin.com/in/danielramos"
+            href="https://www.linkedin.com/in/jorgedramosposadas/"
             target="_blank"
             rel="noopener"
           ><FontAwesomeIcon icon={faLinkedinIn} className="icon linkedin"/></a>
-          <a href="https://github.com/" target="_blank" rel="noopener" ><FontAwesomeIcon icon={faGithub} className="icon github"/></a>
+          <a href="https://github.com/danielRamos10" target="_blank" rel="noopener" ><FontAwesomeIcon icon={faGithub} className="icon github"/></a>
         </div>
       </div>
     </footer>
