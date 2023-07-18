@@ -18,7 +18,6 @@ $flash-white: #ebebeb;
 .project-card > .card::before {
   position: absolute;
   height: 100%;
-  height: 100%;
   width: 810px;
   content: "";
   background: linear-gradient($flash-white, $flame);
@@ -42,6 +41,9 @@ $flash-white: #ebebeb;
 @media only screen and (max-width: 768px), (max-width: 960px){
   .project-card > .card{
     width: 90dvw;
+  }
+  .project-card > .card::before{
+    width: 85dvw;
   }
   .section > .container > .title {
     font-size: 1.2rem !important;

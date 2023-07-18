@@ -45,5 +45,8 @@ $flash-white: #ebebeb;
     width: 90dvw;
     height: 430px;
   }
+  .about-card > .card::before{
+    width: 85dvw;
+  }
  
 }
