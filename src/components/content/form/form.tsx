@@ -9,14 +9,17 @@ export default function FormComponent() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const onSubmitHandler = (e: any) => {
-    e.preventDefault();
-    if (name.trim() === "") {
-      return;
-    }
-    
-  
-  };
+  // const handleSubmit =  (e:any) => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...this.state })
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error));
+
+  //   e.preventDefault();
+  // };
   const onNameChangeHandler = (e: any) => {
     setName(e.target.value);
   };
@@ -29,11 +32,11 @@ export default function FormComponent() {
   return (
     <div className="form-container">
       <form
-        onSubmit={onSubmitHandler}
         method="POST"
         data-netlify="true"
-        name="contact-form"
+        name="contact"
       >
+         <input type="hidden" name="form-name" value="contact" data-netlify-honeypot="bot-field"/>
         <Form.Field backgroundColor="gunmetal">
           <Form.Label textColor="flash-white" backgroundColor="gunmetal">
             Name
@@ -93,7 +96,7 @@ export default function FormComponent() {
             backgroundColor="flash-white"
             placeholder="..."
             id="message"
-            color={`${message && message.length < 0 ? "cyan" : "flame"}`}
+            color={`${message && message.length > 0 ? "cyan" : "flame"}`}
             onChange={onMessageChangeHandler}
           />
           {message && message.length > 0 ? (

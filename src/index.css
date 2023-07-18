@@ -8,8 +8,15 @@
 html {
   background-color: #1f2833;
   scroll-behavior: smooth !important; 
+  overflow: hidden !important;
 }
 body{
   font-family: 'Syne', sans-serif !important;
+  height: 100% !important;
+  position: fixed !important;
+  /* prevent overscroll bounce*/
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
+  /* iOS velocity scrolling */
 }
 
