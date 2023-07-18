@@ -20,6 +20,7 @@ $flash-white: #ebebeb;
   align-items: $align-items;
   justify-content: $justify-content;
   flex-direction: $flex-direction;
+  overflow: hidden;
 }
 
 
@@ -76,6 +77,7 @@ to {
     background-position: center;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .home-container > .intro {
     font-size: 2rem;
