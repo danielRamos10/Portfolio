@@ -9,11 +9,9 @@
 html {
   background-color: #1f2833;
   scroll-behavior: smooth !important; 
-  min-height: 100% !important;
-  min-height: -webkit-fill-available !important;
- 
 }
 body{
   font-family: 'Syne', sans-serif !important;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 

@@ -47,11 +47,6 @@ $gunmetal: rgb(31, 40, 51);
 }
 
 @media only screen and (max-width: 768px), (max-width: 960px) {
-    .footer-container{
-        position: fixed;
-        margin-top: 2rem;
-        z-index: 1000;
-    }
   .copyright {
     font-size: 0.8rem;
   }
