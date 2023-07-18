@@ -37,11 +37,11 @@ export default function FormComponent() {
         name="contact"
       >
          <input type="hidden" name="form-name" value="contact" data-netlify-honeypot="bot-field"/>
-        <Form.Field backgroundColor="gunmetal">
-          <Form.Label textColor="flash-white" backgroundColor="gunmetal">
+        <Form.Field >
+          <Form.Label textColor="flash-white" >
             Name
           </Form.Label>
-          <Form.Control backgroundColor="gunmetal">
+          <Form.Control >
             <Form.Input
               color={`${name && name.length > 0 ? "cyan" : "flame"}`}
               backgroundColor="flash-white"
@@ -63,11 +63,11 @@ export default function FormComponent() {
             <Form.Help color="flame">Name cannot be empty</Form.Help>
           )}
         </Form.Field>
-        <Form.Field backgroundColor="gunmetal">
-          <Form.Label textColor="flash-white" backgroundColor="gunmetal">
+        <Form.Field >
+          <Form.Label textColor="flash-white">
             Email
           </Form.Label>
-          <Form.Control backgroundColor="gunmetal">
+          <Form.Control >
             <Form.Input
               color={`${email && email.length > 0 ? "cyan" : "flame"}`}
               backgroundColor="flash-white"

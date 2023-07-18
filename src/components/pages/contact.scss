@@ -1,25 +1,24 @@
 $align-items: center;
 $justify-content: start;
-$flex-direction:column;
+$flex-direction: column;
 
-.contact-container{
-    height: 750px;
-    display: flex;
-    width: 100%;
-    align-items: $align-items;
-    justify-content: $justify-content;
-    flex-direction: $flex-direction;
+.contact-container {
+  height: 750px;
+  display: flex;
+  width: 100%;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
 }
 
-.contact-container > .title{
-   margin-top: 6rem;
-   font-size: 4rem;
+.contact-container > .title {
+  text-shadow: 5px 5px 5px black;
+  margin-top: 6rem;
+  font-size: 4rem;
 }
 
-@media screen  and (max-width: 768px), (max-width: 960px){
-    .contact-container > .title{
-        font-size: 2rem;
-    }
-    
+@media screen and (max-width: 768px), (max-width: 960px) {
+  .contact-container > .title {
+    font-size: 2rem;
+  }
 }
-

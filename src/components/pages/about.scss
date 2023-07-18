@@ -1,6 +1,6 @@
 $cyan: #66fcf1;
 $gunmetal: rgb(31, 40, 51);
-$gunmetal-flush: rgba(31, 40, 51, 0.5);
+$gunmetal-flush: rgba(31, 40, 51, 0.1);
 $flame: rgb(228, 87, 46);
 $aquamarine: rgb(69, 162, 158);
 $flash-white: #ebebeb;
@@ -19,13 +19,7 @@ $flash-white: #ebebeb;
 
 .headers {
   display: flex;
-  background: url("/src/assets/hd-us.png") no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  background-blend-mode:darken;
-  background-attachment:scroll;
-  background-clip:padding-box;
-  background-color: $gunmetal-flush;
+  text-shadow: 5px 5px 5px black;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -160,9 +154,11 @@ $flash-white: #ebebeb;
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px), (max-width: 960px), (max-width: 1020px) {
+@media only screen and (max-width: 768px),
+  (max-width: 960px),
+  (max-width: 1020px) {
   .about-container {
-    height: 3150px;
+    height: 3100px;
     width: 100%;
   }
   .about-grid-parent {
@@ -172,55 +168,57 @@ $flash-white: #ebebeb;
     grid-column-gap: 0px;
     grid-row-gap: 10px;
   }
-  .img-1, .img-2, .img-3, .img-4 {
-    transform: translate(0,0);
-    .fcb:hover &{
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4 {
+    transform: translate(0, 0);
+    .fcb:hover & {
       transform: none;
+      cursor: default;
     }
   }
- 
-  .vaqueros{
+
+  .vaqueros {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: 4 / 1 / 5 / 2;
   }
-  
 
   .headers > .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .headers > .subtitle {
     font-size: 3.5rem;
   }
-  .headers{
+  .headers {
     margin-top: 6rem;
     grid-area: 1 / 1 / 2 / 2;
   }
-  .background{
+  .background {
     grid-area: 2 / 1 / 3 / 2;
   }
-  .education{
+  .education {
     grid-area: 3 / 1 / 4 / 2;
   }
-  .hobbies{
+  .hobbies {
     grid-area: 5 / 1 / 6 / 2;
   }
-  .fcb{
+  .fcb {
     display: flex;
     align-items: center;
     grid-area: 6 / 1 / 7 / 2;
   }
-  .fcb img{
+  .fcb img {
     width: 85dvw;
     height: 300px;
   }
-  .vaqueros img{
+  .vaqueros img {
     width: 80dvw;
   }
   .vaq-img:hover {
     cursor: default;
     animation: none;
   }
- 
 }

@@ -10,10 +10,6 @@ $flash-white: #ebebeb;
 
 .home-container {
   top: 0;
-  background: url("/src/assets/sand.jpg") no-repeat center;
-  background-blend-mode: screen;
-  background-size: cover;
-  background-color: $gunmetal;
   display: flex;
   min-height: 100dvh;
   width: 100dvw;
@@ -69,12 +65,6 @@ $flash-white: #ebebeb;
 }
 
 @media only screen and (max-width: 768px) {
-  .home-container {
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: auto;
-  
-  }
   .home-container > .intro {
     font-size: 2rem;
   }

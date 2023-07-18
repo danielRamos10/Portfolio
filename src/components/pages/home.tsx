@@ -1,9 +1,9 @@
 import "./home.scss";
-import { Heading} from "react-bulma-components";
+import { Heading } from "react-bulma-components";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" id="homeComponent">
       <Heading className="intro">Hello, my name is</Heading>
       <Heading className="name anim-typewriter">Daniel Ramos</Heading>
       <Heading className="occupation">Frontend Developer</Heading>

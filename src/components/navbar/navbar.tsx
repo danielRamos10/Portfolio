@@ -15,11 +15,6 @@ import resumePDF from "/src/JDRP-RESUME-d.pdf";
 function NavBar() {
   const [toggle, setToggle] = useState(false);
 
-
-  const scrollToTop = () => {
-    setToggle(!toggle);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
   return (
     <Navbar className="navbar-container">
       <Navbar.Brand>
@@ -45,9 +40,7 @@ function NavBar() {
         alignContent="center"
       >
         <Navbar.Container align="right">
-          <Navbar.Item onClick={
-            scrollToTop
-          }>
+          <Navbar.Item href="#homeComponent" onClick={() => { setToggle(!toggle) }}>
             <span>
               <FontAwesomeIcon icon={faHouse} />
             </span>

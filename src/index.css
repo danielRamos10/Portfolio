@@ -7,7 +7,6 @@
 }
 html {
   background-color: #1f2833;
-  scroll-behavior: smooth !important; 
   overflow: hidden !important;
 }
 body{
@@ -17,6 +16,11 @@ body{
   /* prevent overscroll bounce*/
   overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch !important;
+  scroll-behavior: smooth !important; 
   /* iOS velocity scrolling */
+  background: url("/src/assets/sand.jpg") no-repeat center;
+  background-blend-mode: screen !important;
+  background-color: #fff !important;
+  background-size: cover !important;
 }
 
