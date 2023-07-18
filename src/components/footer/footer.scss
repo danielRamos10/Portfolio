@@ -47,6 +47,9 @@ $gunmetal: rgb(31, 40, 51);
 }
 
 @media only screen and (max-width: 768px), (max-width: 960px) {
+    .inside__footer {
+        padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+      }
   .copyright {
     font-size: 0.8rem;
   }
