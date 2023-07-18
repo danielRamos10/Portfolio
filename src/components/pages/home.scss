@@ -11,7 +11,7 @@ $flash-white: #ebebeb;
 .home-container {
   top: 0;
   background: url("/src/assets/sand.jpg") no-repeat center;
-  background-blend-mode:screen;
+  background-blend-mode: screen;
   background-size: cover;
   background-color: $gunmetal;
   display: flex;
@@ -23,14 +23,12 @@ $flash-white: #ebebeb;
   overflow: hidden;
 }
 
-
-
 .home-container > .intro {
   color: $flash-white;
   font-size: 2.5rem;
   text-shadow: 2px 2px 2px $aquamarine;
 }
-.home-container > .name { 
+.home-container > .name {
   color: $cyan;
   font-size: 6rem;
   text-shadow: 2px 4px 2px $aquamarine;
@@ -48,52 +46,50 @@ $flash-white: #ebebeb;
 /*Animation*/
 
 .anim-typewriter {
-animation: typewriter 5s steps(40) 1s infinite,
-blinkTextCursor 10s steps(40) normal infinite;
+  animation: typewriter 5s steps(40) 1s infinite,
+    blinkTextCursor 10s steps(40) normal infinite;
 }
 
 @keyframes typewriter {
-from {
-      width: 0;
-}
-to {
-      width: 60dvw;
-}
+  from {
+    width: 0;
+  }
+  to {
+    width: 60dvw;
+  }
 }
 
 @keyframes blinkTextCursor {
-from {
-      border-right-color: rgba(255, 255, 255, 0.75);
-}
-to {
-      border-right-color: transparent;
-}
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .home-container {
-    width: 100%;
-    height: 700px;
-    background-position: center;
+    background-position: top center;
+    background-attachment: fixed;
     background-size: auto;
+  
   }
   .home-container > .intro {
     font-size: 2rem;
   }
   .home-container > .name {
     font-size: 2.5rem;
-  
   }
   .home-container > .occupation {
     font-size: 1.2rem;
-
   }
   @keyframes typewriter {
     from {
-          width: 0;
+      width: 0;
     }
     to {
-          width: 85dvw;
+      width: 85dvw;
     }
-    }
+  }
 }

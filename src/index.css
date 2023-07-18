@@ -12,6 +12,5 @@ html {
 }
 body{
   font-family: 'Syne', sans-serif !important;
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
