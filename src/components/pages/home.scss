@@ -73,11 +73,10 @@ to {
 @media only screen and (max-width: 768px) {
   .home-container {
     width: 100%;
-    background-size: cover;
     background-position: center;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    
   }
   .home-container > .intro {
     font-size: 2rem;
