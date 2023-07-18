@@ -14,7 +14,7 @@ function About() {
   return (
     <div id="aboutComponent" className="about-container">
       <div className="about-grid-parent">
-        <Fade left>
+        <Fade left delay={500}>
           <div className="headers">
             <Heading textColor="cyan">About</Heading>
             <Heading textColor="cyan" subtitle>
@@ -23,7 +23,7 @@ function About() {
           </div>
         </Fade>
 
-        <Fade right>
+        <Fade right delay={500}>
           <div className="background">
             <ContentCard>
               <ContentSection
@@ -34,7 +34,7 @@ function About() {
             Fade
           </div>
         </Fade>
-        <Fade left>
+        <Fade left delay={500}>
           <div className="education">
             <ContentCard>
               <ContentSection
@@ -45,11 +45,11 @@ function About() {
           </div>
         </Fade>
         <div className="vaqueros">
-          <Zoom>
+          <Zoom delay={500}>
             <img className="vaq-img" src={vaqueroslogo} alt="vaqueros" />
           </Zoom>
         </div>
-        <Fade left>
+        <Fade left delay={500}>
           <div className="fcb">
             <img className="img-1" src={fcb} alt="fcb" />
             <img className="img-2" src={fcb} alt="fcb" />
@@ -58,7 +58,7 @@ function About() {
           </div>
         </Fade>
         <div className="hobbies">
-          <Fade right>
+          <Fade right delay={500}>
             <ContentCard>
               <ContentSection
                 title={AboutContent[2].title}
