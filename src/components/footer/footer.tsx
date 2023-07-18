@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 function FooterComponent() {
   return (
-    <footer className="footer-container">
+    <div className="footer-container">
       <div className="inside__footer">
         <p className="copyright">&copy; Daniel Ramos. All Rights Reserved.</p>
         <div className="social">
@@ -11,11 +11,19 @@ function FooterComponent() {
             href="https://www.linkedin.com/in/jorgedramosposadas/"
             target="_blank"
             rel="noopener"
-          ><FontAwesomeIcon icon={faLinkedinIn} className="icon linkedin"/></a>
-          <a href="https://github.com/danielRamos10" target="_blank" rel="noopener" ><FontAwesomeIcon icon={faGithub} className="icon github"/></a>
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} className="icon linkedin" />
+          </a>
+          <a
+            href="https://github.com/danielRamos10"
+            target="_blank"
+            rel="noopener"
+          >
+            <FontAwesomeIcon icon={faGithub} className="icon github" />
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
 
