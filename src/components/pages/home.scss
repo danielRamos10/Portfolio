@@ -73,11 +73,9 @@ to {
 @media only screen and (max-width: 768px) {
   .home-container {
     width: 100%;
-    height:700px;
-    background-position: top center;
-    align-items: center;
-    justify-content: center;
-    
+    height: 700px;
+    background-position: center;
+    background-size: auto;
   }
   .home-container > .intro {
     font-size: 2rem;
