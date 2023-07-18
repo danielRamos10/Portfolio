@@ -9,7 +9,7 @@
 html {
   background-color: #1f2833;
   scroll-behavior: smooth !important; 
-  min-height: 100dvh !important;
+  min-height: 100% !important;
   min-height: -webkit-fill-available !important;
  
 }
