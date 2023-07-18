@@ -57,7 +57,7 @@ from {
       width: 0;
 }
 to {
-      width: 70dvw;
+      width: 60dvw;
 }
 }
 
@@ -90,4 +90,12 @@ to {
     font-size: 1.2rem;
 
   }
+  @keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 85dvw;
+    }
+    }
 }
