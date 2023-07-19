@@ -47,6 +47,7 @@ export default function FormComponent() {
               backgroundColor="flash-white"
               type="text"
               id="name"
+              name="name"
               placeholder="Rocket"
               onChange={onNameChangeHandler}
             />
@@ -72,6 +73,7 @@ export default function FormComponent() {
               color={`${email && email.length > 0 ? "cyan" : "flame"}`}
               backgroundColor="flash-white"
               type="text"
+              name="email"
               id="email"
               placeholder="Rocket"
               onChange={onEmailChangeHandler}
@@ -95,6 +97,7 @@ export default function FormComponent() {
             size={"small"}
             backgroundColor="flash-white"
             placeholder="..."
+            name="message"
             id="message"
             color={`${message && message.length > 0 ? "cyan" : "flame"}`}
             onChange={onMessageChangeHandler}
