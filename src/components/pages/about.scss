@@ -158,15 +158,16 @@ $flash-white: #ebebeb;
   (max-width: 960px),
   (max-width: 1020px) {
   .about-container {
-    height: 3100px;
+    height: 2400px;
     width: 100%;
   }
   .about-grid-parent {
     display: grid;
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
   }
   .img-1,
   .img-2,
@@ -183,7 +184,7 @@ $flash-white: #ebebeb;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 4 / 2;
   }
 
   .headers > .title {
@@ -191,24 +192,33 @@ $flash-white: #ebebeb;
   }
   .headers > .subtitle {
     font-size: 3.5rem;
+    margin-bottom: 2rem;
   }
-  .headers {
+  .headers{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 2rem;
+  }
+  .background > .about-card{
+    margin-top:10rem ;
+  }
+
+  .background, .headers {
+    height: 600px;
     margin-top: 6rem;
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2/ 2;
   }
-  .background {
+
+  .education {
     grid-area: 2 / 1 / 3 / 2;
   }
-  .education {
-    grid-area: 3 / 1 / 4 / 2;
-  }
   .hobbies {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 4 / 1 / 5 / 2;
   }
   .fcb {
     display: flex;
     align-items: center;
-    grid-area: 6 / 1 / 7 / 2;
+    grid-area: 5 / 1 / 6 / 2;
   }
   .fcb img {
     width: 85dvw;
