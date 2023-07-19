@@ -1,6 +1,6 @@
 import { faCheck, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 import "./form.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Form, Icon } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,18 +8,21 @@ export default function FormComponent() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [btn, setBtn] = useState(true);
 
-  // const handleSubmit =  (e:any) => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...this.state })
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error));
+  useEffect(()=>{
+    if (name !=='' && email!=='' && message !=='')
+    {
+    setBtn(false);
+    }
+    else{
+      setBtn(true);
+    }
+  
+  }, [email, message, name])
 
-  //   e.preventDefault();
-  // };
+
+  
   const onNameChangeHandler = (e: any) => {
     setName(e.target.value);
   };
@@ -110,7 +113,7 @@ export default function FormComponent() {
         </Form.Field>
         <Form.Field kind="group">
           <Form.Control>
-            <Button outlined mt={1} type="submit">
+            <Button outlined mt={1} type="submit" disabled={btn}>
               Submit
             </Button>
           </Form.Control>
