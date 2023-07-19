@@ -6,7 +6,7 @@ $aquamarine: rgb(69, 162, 158);
 $flash-white: #ebebeb;
 
 .about-container {
-  height: 1800px;
+  height: 1900px;
   width: 100%;
 }
 
@@ -24,7 +24,7 @@ $flash-white: #ebebeb;
   justify-content: center;
   align-items: center;
   grid-area: 1 / 1 / 2 / 2;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .background {
@@ -32,7 +32,7 @@ $flash-white: #ebebeb;
   flex-direction: column;
   align-items: center;
   grid-area: 1 / 2 / 2 / 3;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 .education {
   display: flex;
@@ -79,10 +79,12 @@ $flash-white: #ebebeb;
 
 .fcb {
   margin-top: 3rem;
+  margin-left: 1rem;
   grid-area: 3/1/4/2;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  justify-content: start;
+  align-items: center;
 }
 
 .fcb img {
@@ -158,7 +160,7 @@ $flash-white: #ebebeb;
   (max-width: 960px),
   (max-width: 1020px) {
   .about-container {
-    height: 2400px;
+    height: 2500px;
     width: 100%;
   }
   .about-grid-parent {
@@ -188,19 +190,20 @@ $flash-white: #ebebeb;
   }
 
   .headers > .title {
-    font-size: 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
   }
   .headers > .subtitle {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
   .headers{
     display: flex;
     justify-content: start;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .background > .about-card{
-    margin-top:10rem ;
+    margin-top:9rem ;
   }
 
   .background, .headers {
@@ -218,11 +221,13 @@ $flash-white: #ebebeb;
   .fcb {
     display: flex;
     align-items: center;
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 5 / 1 / 6 / 2;  
+    margin-left: 0;
   }
   .fcb img {
     width: 85dvw;
     height: 300px;
+  
   }
   .vaqueros img {
     width: 80dvw;

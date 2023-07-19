@@ -14,11 +14,12 @@ $flex-direction: column;
   flex-direction: $flex-direction;
   align-items: $align-items;
   justify-content: $justify-content;
-  height: 2800px;
+  height: 2820px;
   width: 100%;
 }
 .project-container > .title {
   font-size: 5rem !important;
+  margin-top: 8rem;
   text-shadow: 5px 5px 5px black;
   width: 100%;
   text-align: center;
@@ -104,9 +105,13 @@ $flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  .project-container{
+    height: 2750px;
+  }
   .project-container > .title {
     font-size: 2rem !important;
     width: 100%;
+    margin-top: 2rem;
     text-align: center;
   }
   .jbook img,
