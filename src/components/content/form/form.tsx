@@ -41,13 +41,13 @@ export default function FormComponent() {
       >
          <input type="hidden" name="form-name" value="contact" data-netlify-honeypot="bot-field"/>
         <Form.Field >
-          <Form.Label textColor="flash-white" >
+          <Form.Label textColor="oldlace" >
             Name
           </Form.Label>
           <Form.Control >
             <Form.Input
-              color={`${name && name.length > 0 ? "cyan" : "flame"}`}
-              backgroundColor="flash-white"
+              color={`${name && name.length > 0 ? "caribbean-current" : "burgundy"}`}
+              backgroundColor="oldlace"
               type="text"
               id="name"
               name="name"
@@ -64,17 +64,17 @@ export default function FormComponent() {
           {name && name.length > 0 ? (
             <div style={{ marginTop: "2.1rem" }}></div>
           ) : (
-            <Form.Help color="flame">Name cannot be empty</Form.Help>
+            <Form.Help color="burgundy">Name cannot be empty</Form.Help>
           )}
         </Form.Field>
         <Form.Field >
-          <Form.Label textColor="flash-white">
+          <Form.Label textColor="oldlace">
             Email
           </Form.Label>
           <Form.Control >
             <Form.Input
-              color={`${email && email.length > 0 ? "cyan" : "flame"}`}
-              backgroundColor="flash-white"
+              color={`${email && email.length > 0 ? "caribbean-current" : "burgundy"}`}
+              backgroundColor="oldlace"
               type="text"
               name="email"
               id="email"
@@ -91,29 +91,29 @@ export default function FormComponent() {
           {email && email.length > 0 ? (
             <div style={{ marginTop: "2.1rem" }}></div>
           ) : (
-            <Form.Help color="flame">Email cannot be empty</Form.Help>
+            <Form.Help color="burgundy">Email cannot be empty</Form.Help>
           )}
         </Form.Field>
         <Form.Field>
-          <Form.Label textColor="flash-white">Message</Form.Label>
+          <Form.Label textColor="oldlace">Message</Form.Label>
           <Form.Textarea
             size={"small"}
-            backgroundColor="flash-white"
+            backgroundColor="oldlace"
             placeholder="..."
             name="message"
             id="message"
-            color={`${message && message.length > 0 ? "cyan" : "flame"}`}
+            color={`${message && message.length > 0 ? "caribbean-current" : "burgundy"}`}
             onChange={onMessageChangeHandler}
           />
           {message && message.length > 0 ? (
             <div style={{ marginTop: "2.1rem" }}></div>
           ) : (
-            <Form.Help color="flame">Message cannot be empty</Form.Help>
+            <Form.Help color="burgundy">Message cannot be empty</Form.Help>
           )}
         </Form.Field>
         <Form.Field kind="group">
           <Form.Control>
-            <Button outlined mt={1} type="submit" disabled={btn}>
+            <Button mt={1} type="submit" disabled={btn}>
               Submit
             </Button>
           </Form.Control>

@@ -12,7 +12,7 @@ import jbook from "/src/assets/jbook-img.png";
 function Project() {
   return (
     <div id="projectsComponent" className="project-container">
-      <Heading textColor="flame">Projects</Heading>
+      <Heading textColor="caribbean-current">Projects</Heading>
 
       <div className="project-grid-parent">
        

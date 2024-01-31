@@ -15,11 +15,11 @@ const ProjectSection: React.FC<ContentProps> = ({
   return (
     <Section style={{ zIndex: "1" }}>
       <Container>
-        <Heading textColor='flame' textAlign={"center"}>
+        <Heading textColor='caribbean-current' textAlign={"left"}>
           {title}
         </Heading>
 
-        <Heading subtitle textColor='flash-white' mt={1}>
+        <Heading subtitle textColor='oldlace' mt={1}>
           {description}
         </Heading>
         <div className='tech-group'>

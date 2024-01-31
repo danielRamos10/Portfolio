@@ -15,8 +15,8 @@ function About() {
       <div className="about-grid-parent">
        
           <div className="headers">
-            <Heading textColor="cyan">About</Heading>
-            <Heading textColor="cyan" subtitle>
+            <Heading textColor="caribbean-current">About</Heading>
+            <Heading textColor="caribbean-current" subtitle>
               Me
             </Heading>
           </div>

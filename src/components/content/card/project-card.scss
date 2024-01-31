@@ -1,9 +1,9 @@
 $burgundy: #890620;
 $oldlace: #f5f1e3;
-$tomato: #fc5130;
+$dark-cadet: #000F27;
 $space-cadet: #202c59;
 $space-cadet-hue: rgba(34, 0, 34, 0.8);
-$caribbean-current: #156064;
+$caribbean-current: #0EB1D2;
 
 
 .project-card > .card {
@@ -13,7 +13,7 @@ $caribbean-current: #156064;
   width: 800px;
   height: 610px;
   border-radius: 20px !important;
-  background-color: $space-cadet-hue;
+  background-color: $space-cadet;
   overflow: hidden !important;
 }
 .project-card > .card::before {
@@ -28,7 +28,7 @@ $caribbean-current: #156064;
 .project-card > .card::after {
   content: "";
   position: absolute;
-  background-color: $space-cadet;
+  background-color: $dark-cadet;
   inset: 5px;
   border-radius: 16px;
 }

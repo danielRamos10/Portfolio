@@ -1,15 +1,15 @@
-$cyan: #66fcf1;
-$gunmetal: rgb(31, 40, 51);
-$gunmetal-flush: rgba(31, 40, 51, 0.5);
-$flame: rgb(228, 87, 46);
-$aquamarine: rgb(69, 162, 158);
-$flash-white: #ebebeb;
+$burgundy: #890620;
+$oldlace: #f5f1e3;
+$dark-cadet: #000F27;
+$space-cadet: #202c59;
+$space-cadet-hue: rgba(34, 0, 34, 0.8);
+$caribbean-current: #0EB1D2;
 
 .about-card > .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $gunmetal-flush;
+  background-color: $space-cadet;
   width: 40dvw;
   height: 500px;
   border-radius: 20px !important;
@@ -20,13 +20,13 @@ $flash-white: #ebebeb;
   height: 100%;
   width: 810px;
   content: "";
-  background: linear-gradient($cyan, $flash-white);
+  background: linear-gradient($caribbean-current, $oldlace);
   animation: rotate 10s ease-in-out infinite;
 }
 .about-card > .card::after {
   content: "";
   position: absolute;
-  background-color: $gunmetal;
+  background-color: $dark-cadet;
   inset: 6px;
   border-radius: 16px;
 }

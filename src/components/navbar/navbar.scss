@@ -5,17 +5,17 @@
 $align-items: center;
 $justify-content: center;
 $flex-direction: column;
-$cyan: #66fcf1;
-$gunmetal: rgb(31, 40, 51);
-$gunmetal-flush: rgba(31, 40, 51, 0.5);
-$flame: rgb(228, 87, 46);
-$aquamarine: rgb(69, 162, 158);
-$flash-white: #ebebeb;
+$burgundy: #ac0a2a;
+$oldlace: #f5f1e3;
+$dark-cadet: #000F27;
+$space-cadet: #202c59;
+$space-cadet-hue: rgba(34, 0, 34, 0.8);
+$caribbean-current: #0EB1D2;
 .navbar {
   position: fixed !important;
   width: 100%;
   box-shadow: 0px 2px 2px 0px rgba(3, 14, 21, 0.5);
-  background-color: $gunmetal-flush !important; 
+  background-color: $dark-cadet !important; 
 }
 
 .navbar-brand {
@@ -23,7 +23,7 @@ $flash-white: #ebebeb;
   padding-bottom: 1rem;
 }
 .navbar-burger {
-  color: #66fcf1 !important;
+  color: $caribbean-current !important;
 }
 #navbarBurger {
   margin-left: 0;
@@ -40,7 +40,7 @@ $flash-white: #ebebeb;
 }
 
 .navbar-item {
-  color: $cyan !important;
+  color: $caribbean-current !important;
   font-size: 1rem;
 }
 .navbar-item > span {
@@ -56,14 +56,13 @@ $flash-white: #ebebeb;
   margin-left: 1rem;
 }
 .navbar-item > .button{
-  background-color: $gunmetal-flush;
-  border-color: $flame;
-  color: $flame;
+  background-color: $space-cadet;
+  border-color: $dark-cadet;
+  color: $oldlace;
   &:hover{
-    background-color: $flame;
-    color: $flash-white;
-    border-color: $flame;
-    
+    background-color: $caribbean-current;
+    color: $oldlace;
+    border-color: $space-cadet;
   }
   
 }
@@ -85,7 +84,7 @@ a.navbar-item::before {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #45a29e;
+  background-color: $caribbean-current;
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }

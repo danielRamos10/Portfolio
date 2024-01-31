@@ -1,11 +1,12 @@
 $justify-content: space-between;
 $align-items: center;
-$flame: #e4572e;
-$cyan: #66fcf1;
-$aquamarine: #45a29e;
-$gunmetal: rgb(31, 40, 51);
-$gunmetal-flush: rgba(31, 40, 51, 0.1);
 
+$burgundy: #ac0a2a;
+$oldlace: #f5f1e3;
+$dark-cadet: #000F27;
+$space-cadet: #202c59;
+$space-cadet-hue: rgba(34, 0, 34, 0.8);
+$caribbean-current: #0EB1D2;
 .footer-container {
   position: relative;
   bottom: 0;
@@ -21,7 +22,7 @@ $gunmetal-flush: rgba(31, 40, 51, 0.1);
   width: 100%;
   margin: auto;
   display: flex;
-  background-color: $gunmetal-flush;
+  background-color: $dark-cadet;
   justify-content: $justify-content;
   align-items: $align-items;
  
@@ -29,7 +30,7 @@ $gunmetal-flush: rgba(31, 40, 51, 0.1);
 .copyright {
   margin-left: 3rem;
   text-align: left;
-  color: $cyan;
+  color: $caribbean-current;
   order: 1;
   margin-bottom: 0;
 }
@@ -43,9 +44,9 @@ $gunmetal-flush: rgba(31, 40, 51, 0.1);
   width: 25px;
   height: 25px;
   margin-left: 10px;
-  color: $aquamarine;
+  color: $caribbean-current;
   &:hover {
-    color: $cyan;
+    color: $burgundy;
   }
 }
 

@@ -6,7 +6,7 @@ function Contact() {
 
   return (
     <div className="contact-container" id="contactComponent">
-      <Heading textColor="cyan" textAlign={"center"}>
+      <Heading textColor="caribbean-current" textAlign={"center"}>
         Contact
       </Heading>
       <FormComponent />

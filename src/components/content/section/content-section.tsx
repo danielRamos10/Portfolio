@@ -9,10 +9,10 @@ interface ContentProps{
   return (
     <Section style={{zIndex: '1'}} >
       <Container>
-        <Heading textColor='cyan' textAlign={'center'}>
+        <Heading textColor='caribbean-current' textAlign={'center'}>
           {title}
         </Heading>
-        <Heading subtitle textColor='flash-white' mt={1}>
+        <Heading subtitle textColor='oldlace' mt={1}>
          {description}
         </Heading>
       </Container>
