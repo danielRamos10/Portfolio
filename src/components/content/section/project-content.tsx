@@ -18,14 +18,14 @@ const ProjectSection: React.FC<ContentProps> = ({
         <Heading textColor='flame' textAlign={"center"}>
           {title}
         </Heading>
-      
+
         <Heading subtitle textColor='flash-white' mt={1}>
           {description}
         </Heading>
         <div className='tech-group'>
           {techStack.map((tech) => (
             <Button
-              size={"small"}
+              renderAs='button'
               key={tech}
               className='tech-btn'
               color={tech}
@@ -36,7 +36,6 @@ const ProjectSection: React.FC<ContentProps> = ({
           ))}
         </div>
         <img className='project-image' src={image} alt='image' />
-       
       </Container>
     </Section>
   );

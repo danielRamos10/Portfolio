@@ -1,9 +1,10 @@
-$cyan: #66fcf1;
-$gunmetal: #1f2833;
-$gunmetal-flush: rgba(31, 40, 51, 0.3);
-$flame: #e4572e;
-$aquamarine: #45a29e;
-$flash-white: #ebebeb;
+$burgundy: #890620;
+$oldlace: #f5f1e3;
+$tomato: #fc5130;
+$space-cadet: #202c59;
+$space-cadet-hue: rgba(34, 0, 34, 0.8);
+$caribbean-current: #156064;
+
 
 .project-card > .card {
   display: flex;
@@ -12,7 +13,7 @@ $flash-white: #ebebeb;
   width: 800px;
   height: 610px;
   border-radius: 20px !important;
-  background-color: $gunmetal-flush;
+  background-color: $space-cadet-hue;
   overflow: hidden !important;
 }
 .project-card > .card::before {
@@ -21,13 +22,13 @@ $flash-white: #ebebeb;
   width: 810px;
   content: "";
   border-radius: 16px;
-  background: linear-gradient($flash-white, $flame);
+  background: linear-gradient($oldlace, $burgundy);
   animation: rotate 16s ease-in infinite;
 }
 .project-card > .card::after {
   content: "";
   position: absolute;
-  background-color: $gunmetal;
+  background-color: $space-cadet;
   inset: 5px;
   border-radius: 16px;
 }
@@ -39,11 +40,11 @@ $flash-white: #ebebeb;
     transform: rotate(360deg);
   }
 }
-@media only screen and (max-width: 768px), (max-width: 960px){
-  .project-card > .card{
+@media only screen and (max-width: 768px), (max-width: 960px) {
+  .project-card > .card {
     width: 90dvw;
   }
-  .project-card > .card::before{
+  .project-card > .card::before {
     width: 100%;
     height: 100%;
   }
@@ -53,5 +54,4 @@ $flash-white: #ebebeb;
   .section > .container > .subtitle {
     font-size: 95% !important;
   }
-
 }

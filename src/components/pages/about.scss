@@ -1,9 +1,9 @@
-$cyan: #66fcf1;
-$gunmetal: rgb(31, 40, 51);
-$gunmetal-flush: rgba(31, 40, 51, 0.1);
-$flame: rgb(228, 87, 46);
-$aquamarine: rgb(69, 162, 158);
-$flash-white: #ebebeb;
+$burgundy: #890620;
+$oldlace: #f5f1e3;
+$dark-cadet: #000F27;
+$space-cadet: #202c59;
+$space-cadet-hue: rgba(34, 0, 34, 0.8);
+$caribbean-current: #0EB1D2;
 
 .about-container {
   height: 1900px;
@@ -53,7 +53,7 @@ $flash-white: #ebebeb;
 }
 .vaq-img {
   border-radius: 20px;
-  border: solid 6px linear-gradient($cyan, $flame);
+  border: solid 6px linear-gradient($burgundy, $caribbean-current);
 }
 .vaq-img:hover {
   cursor: pointer;
@@ -96,7 +96,7 @@ $flash-white: #ebebeb;
 }
 .img-1 {
   border-radius: 20px;
-  border: 7px solid $cyan;
+  border: 7px solid $caribbean-current;
   clip-path: polygon(0 0, 0 32%, 28% 0);
   transform: translate(-5px, -10px);
   transition: transform 300ms ease;
@@ -107,7 +107,7 @@ $flash-white: #ebebeb;
 }
 
 .img-2 {
-  border: 7px solid $flame;
+  border: 7px solid $burgundy;
   border-radius: 20px;
   clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
   transform: translate(-20px, 5px);
@@ -118,7 +118,7 @@ $flash-white: #ebebeb;
 }
 
 .img-3 {
-  border: 7px solid $cyan;
+  border: 7px solid $caribbean-current;
   border-radius: 20px;
   clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
   transform: translate(-10px, -10px);
@@ -129,7 +129,7 @@ $flash-white: #ebebeb;
 }
 
 .img-4 {
-  border: 7px solid $flame;
+  border: 7px solid $burgundy;
   border-radius: 20px;
   clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
   transform: translate(-25px, 5px);
