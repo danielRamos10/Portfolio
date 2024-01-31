@@ -42,7 +42,7 @@ $flash-white: #ebebeb;
 /*Animation*/
 
 .anim-typewriter {
-  animation: typewriter 5s steps(40) 1s infinite,
+  animation: typewriter 5s steps(40) 1s,
     blinkTextCursor 10s steps(40) normal infinite;
 }
 
@@ -51,7 +51,7 @@ $flash-white: #ebebeb;
     width: 0;
   }
   to {
-    width: 60dvw;
+    width: 58dvw;
   }
 }
 
@@ -63,6 +63,7 @@ $flash-white: #ebebeb;
     border-right-color: transparent;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .home-container > .intro {
@@ -79,7 +80,7 @@ $flash-white: #ebebeb;
       width: 0;
     }
     to {
-      width: 85dvw;
+      width: 60dvw;
     }
   }
 }
