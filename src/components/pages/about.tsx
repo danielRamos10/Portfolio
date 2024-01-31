@@ -5,8 +5,7 @@ import ContentCard from "../content/card/content-card";
 import ContentSection from "../content/section/content-section";
 import vaqueroslogo from "/src/assets/vaqueros.png";
 import fcb from "/src/assets/fcb.jpg";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+
 
 
 function About() {
@@ -14,16 +13,16 @@ function About() {
   return (
     <div id="aboutComponent" className="about-container">
       <div className="about-grid-parent">
-        <Fade bottom>
+       
           <div className="headers">
             <Heading textColor="cyan">About</Heading>
             <Heading textColor="cyan" subtitle>
               Me
             </Heading>
           </div>
-        </Fade>
+      
 
-        <Fade bottom>
+        
           <div className="background">
             <ContentCard>
               <ContentSection
@@ -32,8 +31,8 @@ function About() {
               />
             </ContentCard>
           </div>
-        </Fade>
-        <Fade bottom>
+        
+        
           <div className="education">
             <ContentCard>
               <ContentSection
@@ -42,29 +41,29 @@ function About() {
               />
             </ContentCard>
           </div>
-        </Fade>
+       
         <div className="vaqueros">
-          <Zoom >
+         
             <img className="vaq-img" src={vaqueroslogo} alt="vaqueros" />
-          </Zoom>
+         
         </div>
-        <Fade bottom>
+        
           <div className="fcb">
             <img className="img-1" src={fcb} alt="fcb" />
             <img className="img-2" src={fcb} alt="fcb" />
             <img className="img-3" src={fcb} alt="fcb" />
             <img className="img-4" src={fcb} alt="fcb" />
           </div>
-        </Fade>
+       
         <div className="hobbies">
-          <Fade bottom delay={500}>
+         
             <ContentCard>
               <ContentSection
                 title={AboutContent[2].title}
                 description={AboutContent[2].description}
               />
             </ContentCard>
-          </Fade>
+        
         </div>
       </div>
     </div>

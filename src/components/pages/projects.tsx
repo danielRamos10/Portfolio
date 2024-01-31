@@ -7,7 +7,7 @@ import leafybuddy from "/src/assets/leafybuddy.png";
 import pixelgram from "/src/assets/pixelgram.png";
 import riovax from "/src/assets/riovax.png";
 import jbook from "/src/assets/jbook-img.png";
-import Slide from "react-reveal/Slide";
+
 
 function Project() {
   return (
@@ -15,7 +15,7 @@ function Project() {
       <Heading textColor="flame">Projects</Heading>
 
       <div className="project-grid-parent">
-        <Slide bottom>
+       
           <div className="leafybuddy">
             <ProjectCard>
               <ProjectSection
@@ -25,8 +25,8 @@ function Project() {
               />
             </ProjectCard>
           </div>
-        </Slide>
-        <Slide bottom>
+   
+        
           <div className="riovax">
             <ProjectCard>
               <ProjectSection
@@ -36,8 +36,8 @@ function Project() {
               />
             </ProjectCard>
           </div>
-        </Slide>
-        <Slide bottom>
+     
+       
           <div className="pixelgram">
             <ProjectCard>
               <ProjectSection
@@ -47,8 +47,7 @@ function Project() {
               />
             </ProjectCard>
           </div>
-        </Slide>
-        <Slide bottom>
+     
           <div className="jbook">
             <ProjectCard>
               <ProjectSection
@@ -58,7 +57,6 @@ function Project() {
               />
             </ProjectCard>
           </div>
-        </Slide>
       </div>
     </div>
   );
