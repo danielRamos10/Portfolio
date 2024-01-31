@@ -1,4 +1,4 @@
-import { Section, Container, Heading, Button } from 'react-bulma-components'
+import { Section, Container, Heading } from 'react-bulma-components'
 
 interface ContentProps{
   title: string;
