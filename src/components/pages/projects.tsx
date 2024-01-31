@@ -22,6 +22,7 @@ function Project() {
                 title={ProjectContent[0].title}
                 description={ProjectContent[0].description}
                 image={leafybuddy}
+                techStack={ProjectContent[0].techStack}
               />
             </ProjectCard>
           </div>
@@ -33,6 +34,7 @@ function Project() {
                 title={ProjectContent[1].title}
                 description={ProjectContent[1].description}
                 image={riovax}
+                techStack={ProjectContent[1].techStack}
               />
             </ProjectCard>
           </div>
@@ -44,6 +46,7 @@ function Project() {
                 title={ProjectContent[2].title}
                 description={ProjectContent[2].description}
                 image={pixelgram}
+                techStack={ProjectContent[2].techStack}
               />
             </ProjectCard>
           </div>
@@ -54,6 +57,7 @@ function Project() {
                 title={ProjectContent[3].title}
                 description={ProjectContent[3].description}
                 image={jbook}
+                techStack={ProjectContent[3].techStack}
               />
             </ProjectCard>
           </div>

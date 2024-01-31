@@ -25,10 +25,11 @@ function About() {
         
           <div className="background">
             <ContentCard>
-              <ContentSection
+                <ContentSection
                 title={AboutContent[0].title}
                 description={AboutContent[0].description}
               />
+            
             </ContentCard>
           </div>
         
