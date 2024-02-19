@@ -9,7 +9,7 @@ $caribbean-current: #0EB1D2;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $space-cadet;
+  background-color: $dark-cadet;
   width: 40dvw;
   height: 500px;
   border-radius: 20px !important;
@@ -20,13 +20,13 @@ $caribbean-current: #0EB1D2;
   height: 100%;
   width: 810px;
   content: "";
-  background: linear-gradient($caribbean-current, $oldlace);
+  background:linear-gradient($caribbean-current, $oldlace);
   animation: rotate 10s ease-in-out infinite;
 }
 .about-card > .card::after {
   content: "";
   position: absolute;
-  background-color: $dark-cadet;
+  background:  linear-gradient(90deg, rgba(0,15,39,1) 0%, rgba(32,44,89,1) 50%, rgba(14,177,210,1) 100%);
   inset: 6px;
   border-radius: 16px;
 }

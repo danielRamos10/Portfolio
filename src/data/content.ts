@@ -2,7 +2,7 @@ export const AboutContent = [
   {
     title: "Background",
     description:
-      "My name is Daniel Ramos, and I am a passionate individual with a background that spans two diverse cultures. Born in Honduras and raised in the United States, I moved to the US at the age of 13. From a young age, I developed a strong interest in technology and computers, which has shaped my journey thus far. Having spent half of my life in Texas, I have grown to love its vibrant atmosphere and embrace its unique blend of cultures. Constantly seeking new challenges and opportunities to expand my knowledge and skills.",
+      "My name is Daniel Ramos, and I am a passionate individual with a background that spans two diverse cultures. Born in Honduras and raised in the United States. From a young age, I developed a strong interest in technology and computers, which has shaped my journey thus far. Constantly seeking new challenges and opportunities to expand my knowledge and skills.",
   },
   {
     title: "Education",
