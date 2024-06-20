@@ -10,7 +10,7 @@ import {
   faLaptop,
 } from "@fortawesome/free-solid-svg-icons";
 
-import resumePDF from "/src/JDRP-RESUME-d.pdf";
+import resumePDF from "/src/JDRP-RESUME-v3.pdf";
 
 function NavBar() {
   const [toggle, setToggle] = useState(false);
